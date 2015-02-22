@@ -1,0 +1,511 @@
+/**
+ * @authors Tr 提亞
+ * @date    2014-12-21
+ */
+/* ==========================================================================
+   分類目錄(CONTENTS)        可直接透過目錄搜尋到對應區塊
+   ==========================================================================
+ * 分類目錄..................(CONTENTS)
+ * 網站預設值................(RESET)
+ * 共用樣式..................(COMMON CLASS)
+ *
+ * 基本樣式................(INDEX)
+ * 選單................(INDEX)
+ ==========================================================================*/
+/* ==========================================================================
+   網站預設值
+   ========================================================================== */
+
+body, html {
+    font-family: Ubuntu, Arial, 微軟正黑體, SimHei, sans-serif;
+    /*font-family: 'Gentona-Light', sans-serif;*/
+
+    background: #EDEDED;
+    height: 100vh;
+}
+.inner {
+    max-width: 1200px;
+    padding: initial;
+}
+.blur {
+    filter: url(blur.svg#blur);
+    /* FireFox, Chrome, Opera */
+
+    -webkit-filter: blur(10px);
+    /* Chrome, Opera */
+
+    -moz-filter: blur(10px);
+    -ms-filter: blur(10px);
+    filter: blur(10px);
+    filter: progid: DXImageTransform.Microsoft.Blur(PixelRadius=10, MakeShadow=false);
+    /* IE6~IE9 */
+}
+/* top
+   ========================================================================== */
+
+.top {
+    background: rgba(28, 28, 28, 0.6);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    height: 50px;
+    color: #eee;
+    line-height: 50px;
+    z-index: 5;
+}
+.top .inner {
+    position: relative;
+}
+.top nav {
+    float: right;
+}
+header {
+    height: 0px;
+    padding-top: 50px;
+    background: #bacac6;
+}
+header .inner {
+    margin-top: 10px;
+}
+header .title {
+    height: 100px;
+    text-align: center;
+}
+h1 {
+    float: left;
+    font-size: 35px;
+    font-family: sans-serif;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+/* 選單
+   ========================================================================== */
+
+nav {
+    /*  float: left;*/
+}
+nav .item {
+    cursor: pointer;
+    display: block;
+    position: relative;
+    line-height: 30px;
+    transition: color 0.25s ease 0.1s;
+    transition: background 0.25s ease 0.1s;
+    font-size: 18px;
+    background: #eee;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+nav .nav {
+    z-index: 5;
+    /* position: absolute; */
+
+    opacity: 0;
+    /* width: 200px; */
+    /* background: #fff; */
+
+    text-align: center;
+    transition: opacity 0.25s ease 0.1s;
+}
+}
+nav .list {
+    height: 0px;
+    display: block;
+    overflow: hidden;
+    line-height: 40px;
+    padding: initial;
+    padding-left: 15px;
+    transition: height 0.25s ease 0.1s;
+}
+nav .list:hover {
+    background: #555;
+}
+nav .item:hover {
+    background: #e0f0e9;
+}
+nav .item:hover > .nav {
+    opacity: 1;
+}
+nav .item:hover > .nav .list {
+    height: 40px;
+}
+/* 單頁式
+   ========================================================================== */
+/*.block-box{
+  position:relative;
+  max-height: 750px;
+}*/
+
+.overflow {
+    overflow: hidden;
+}
+.block {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+.show {
+    display: block;
+}
+.next {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    cursor: pointer;
+    background: #fff;
+    height: 30px;
+}
+.block {
+    width: 100%;
+}
+.block .box {
+    float: left;
+    width: 33.333%;
+    padding: 5px;
+    text-align: left;
+    cursor: pointer;
+    opacity: 0.8;
+    transition: opacity 0.25s ease 0.1s;
+}
+.block .box:hover {
+    opacity: 1;
+}
+.block .in-box {
+    padding: 10px;
+    background: #fff;
+    border: 1px solid #fff;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: #666 0px 0px 0px;
+    -moz-box-shadow: #666 0px 0px 0px;
+    box-shadow: #666 0px 0px 0px;
+    transition: box-shadow 0.25s ease 0.1s;
+}
+.block .box:hover .in-box {
+    -webkit-box-shadow: #666 0px 0px 10px;
+    -moz-box-shadow: #666 0px 0px 10px;
+    box-shadow: #666 0px 0px 10px;
+}
+.block img {
+    background: #ddd;
+    width: 100%;
+    height: 100%;
+}
+.block h3 {
+    font-size: 22px;
+    padding-right: 5px;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.25s ease 0.1s;
+}
+.block .box:hover h3 {
+    color: #9d2933;
+}
+.block .data {
+    color: #aaa;
+}
+.block .word {
+    border-top: 1px solid #ccc;
+    padding: 5px 0;
+    transition: border-top 0.25s ease 0.1s;
+}
+.block .box:hover .word {
+    border-top: 1px solid #E27377;
+}
+/* 主區塊
+   ========================================================================== */
+
+.hide {
+    display: none;
+}
+.single-container {
+    width: 100%;
+    background: #bacac6;
+    position: relative;
+    height: 85%;
+}
+/*.container {
+    width: 100%;
+    background: #bacac6;
+    min-height: 750px;
+    position: relative;
+}*/
+/*.container .inner {
+    width: 100%;
+    position: relative;
+    padding: 10px 0;
+}*/
+
+.main {
+    background: #bacac6;
+    min-height: 750px;
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    padding: 10px 20px 20px 300px;
+    width: 100%;
+}
+.main .box {
+    float: left;
+    max-width: 287px;
+    padding: 5px;
+    text-align: left;
+    display: inline-block;
+    vertical-align: top;
+    cursor: pointer;
+    opacity: 0.8;
+    margin: 5px;
+    transition: opacity 0.25s ease 0.1s;
+}
+.main .box:hover {
+    opacity: 1;
+}
+.main .in-box {
+    padding: 10px;
+    background: #fff;
+    border: 1px solid #fff;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: #666 0px 0px 0px;
+    -moz-box-shadow: #666 0px 0px 0px;
+    box-shadow: #666 0px 0px 0px;
+    transition: box-shadow 0.25s ease 0.1s;
+}
+.main .box:hover .in-box {
+    -webkit-box-shadow: #666 0px 0px 10px;
+    -moz-box-shadow: #666 0px 0px 10px;
+    box-shadow: #666 0px 0px 10px;
+}
+.main img {
+    background: #ddd;
+    width: 100%;
+    height: 100%;
+}
+.main h3 {
+    font-size: 18px;
+    padding-right: 5px;
+    height: 24px;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.25s ease 0.1s;
+    overflow: hidden;
+    width: 190px;
+}
+.main .box:hover h3 {
+    color: #9d2933;
+}
+.main .data {
+    color: #aaa;
+    font-size: 12px;
+}
+.main .word {
+    border-top: 1px solid #ccc;
+    padding: 5px 0;
+    font-size: 14px;
+    transition: border-top 0.25s ease 0.1s;
+    overflow: hidden;
+    height: 29px;
+}
+.main .box:hover .word {
+    border-top: 1px solid #E27377;
+}
+.main .word-row {
+    width: 100%;
+}
+.main .word-row .box {
+    float: left;
+    width: 50%;
+    padding: 5px;
+    text-align: left;
+}
+.main .word-row img {
+    background: #ddd;
+    width: 100%;
+    height: 200px;
+}
+.main .word-row h3 {
+    color: #f00;
+    padding-right: 10px;
+}
+/* 側邊攔
+   ========================================================================== */
+
+.sidebar {
+    width: 300px;
+    position: fixed;
+    border-left: 1px solid #ddd;
+    padding: 10px;
+    top: 0;
+    left: 0;
+}
+.sidebar input {
+    line-height: 25px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    width: 80%;
+    font-size: 16px;
+    padding: 5px;
+    ;
+}
+.sidebar .about {
+    background: #fff;
+    border-radius: 5px;
+    margin: 50px 5px 20px 5px;
+    padding: 10px;
+    font-size: 18px;
+}
+.my-pic {
+    background: url(https://farm8.staticflickr.com/7465/16277325195_2ddd0a65c3_m.jpg) no-repeat center;
+    height: 240px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.sidebar .search {
+    display: inline-block;
+    background: #E0494A;
+    padding: 5px;
+    border-radius: 3px;
+    color: #fff;
+    cursor: pointer;
+    opacity: 0.8;
+    transition: opacity 0.25s ease 0.1s;
+}
+.sidebar .search:hover {
+    opacity: 1;
+}
+.sidebar .sidebar-box {
+    background: #fff;
+    border-radius: 5px;
+    margin: 20px 5px;
+    padding: 10px;
+}
+.sidebar .tab-title {
+    border-bottom: 1px solid #ccc;
+    line-height: 30px;
+    font-size: 25px;
+    font-weight: bold;
+    color: #555;
+}
+}
+.sidebar #ja-tab {
+    margin-top: 5px;
+}
+.sidebar .tab {
+    background: #eee;
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 3px;
+    display: inline-block;
+    cursor: pointer;
+    color: #329CD8;
+    font-weight: bold;
+    transition: color 0.25s ease 0.1s;
+}
+.sidebar .tab:hover {
+    color: #E0494A;
+}
+.sidebar .box {
+    text-align: left;
+    border-bottom: 1px solid #eee;
+    padding: 10px;
+    display: table;
+    width: 100%;
+    cursor: pointer;
+    background: #fff;
+    transition: background 0.25s ease 0.1s;
+}
+.sidebar .box:hover {
+    background: #eedeb0;
+}
+.sidebar .list-box {
+    display: table-cell;
+    vertical-align: top;
+    width: 100%;
+}
+.sidebar .list-pic {
+    margin-right: 10px;
+    display: table-cell;
+}
+.sidebar .list-tit {
+    font-size: 18px;
+}
+.sidebar .sort {
+    color: #9d2933;
+    margin-right: 10px;
+}
+.sidebar .data {
+    font-size: 14px;
+    color: #aaa;
+}
+footer {
+    padding: 20px 0;
+    color: #666;
+}
+/* 跳出預覽視窗
+   ========================================================================== */
+
+#window {
+    position: fixed;
+    background: rgba(26, 26, 26, 0.6);
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100%;
+    text-align: left;
+    z-index: 10;
+    display: none;
+}
+#window .inner {
+    margin-top: 20px;
+    text-align: center;
+}
+#window .js-article {
+    background: #fff;
+    display: inline-block;
+    position: relative;
+    border-radius: 3px;
+}
+#window .data-title {
+    padding: 10px 0;
+    display: inline-block;
+    font-size: 30px;
+}
+#window .data-day {
+    display: block;
+    text-align: right;
+    padding: 0 10px;
+    color: #aaa;
+}
+#window .data-word {
+    padding: 10px;
+}
+#close {
+    cursor: pointer;
+    background: #fff;
+    padding: 5px;
+    position: absolute;
+    right: -25px;
+    top: 5px;
+    height: 50px;
+    font-size: 35px;
+    width: 50px;
+    border-radius: 50px;
+    color: #aaa;
+    -webkit-box-shadow: #666 0px 0px 0px;
+    -moz-box-shadow: #666 0px 0px 0px;
+    box-shadow: #666 0px 0px 10px;
+    transition: background 0.25s ease 0.1s;
+    transition: color 0.25s ease 0.1s;
+}
+#close:hover {
+    background: #eee;
+    color: #666;
+}
+/* 單頁式
+   ========================================================================== */
