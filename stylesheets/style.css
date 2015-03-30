@@ -1,0 +1,354 @@
+/**
+ * @authors Tr (ART)
+ * @date    2015-3-23
+ */
+/* ==========================================================================
+   分類目錄(CONTENTS)        可直接透過目錄搜尋到對應區塊
+   ==========================================================================
+ * 網站樣式統一重製reset................(RESET)
+ * xmixins庫................(RESET)
+ * css3動畫................(RESET)
+ * 下拉是選單................(RESET)
+ ==========================================================================*/
+/* 瀏覽器樣式統一reset
+   ==========================================================================*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html,
+body {
+  font-family: Microsoft YaHei, Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  height: 100vh;
+}
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+ul {
+  font-size: 0;
+  letter-spacing: -4px;
+}
+li {
+  font-size: 14px;
+  display: inline-block;
+  letter-spacing: normal;
+  *display: inline;
+  *zoom: 1;
+}
+img {
+  max-height: 100%;
+  max-width: 100%;
+}
+/* xmixins庫及css3動畫
+   ==========================================================================*/
+.moveleft620 {
+  -webkit-animation: moveleft620;
+  -moz-animation: moveleft620;
+  -o-animation: moveleft620;
+  animation: moveleft620;
+}
+/* 通用class
+   ==========================================================================*/
+/* ==========================================================================
+   網站樣式
+   ==========================================================================*/
+header {
+  height: 80px;
+  padding: 10px;
+  background: #3f7d9b;
+}
+header .logo {
+  text-align: center;
+  font-size: 1.5em;
+  color: #f1f1e8;
+  line-height: 60px;
+}
+header a {
+  font-size: 18px;
+  margin-left: 10px;
+  color: #a3c4cb;
+}
+.inner {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+nav {
+  background: #a3c4cb;
+  color: #3f7d9b;
+}
+nav ul {
+  display: inline-block;
+  vertical-align: top;
+  width: 49%;
+  font-size: 20px;
+  line-height: 35px;
+}
+nav li {
+  font-size: 18px;
+  padding: 0 10px;
+  cursor: pointer;
+}
+nav li:hover {
+  color: #fff;
+}
+.search {
+  display: inline-block;
+  vertical-align: top;
+  width: 50%;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: right;
+  position: relative;
+}
+input,
+textarea {
+  border-radius: 3px;
+  border: 0;
+  padding: 5px;
+}
+.tags {
+  display: none;
+  position: absolute;
+  right: 0px;
+  width: 180px;
+  background: #fff;
+  top: 36px;
+  border-radius: 3px;
+  font-size: 16px;
+  text-align: center;
+}
+article {
+  padding: 10px;
+  background: #f1f1e8;
+}
+.create {
+  display: none;
+  padding: 10px 0;
+}
+.create .inner {
+  max-width: 800px;
+}
+.create .inner div {
+  min-height: 35px;
+  padding: 5px;
+  text-align: center;
+}
+.create span {
+  vertical-align: top;
+  width: 100px;
+  display: inline-block;
+  text-align: right;
+  line-height: 25px;
+  padding-right: 10px;
+}
+.create input {
+  height: 24px;
+  width: 30%;
+}
+.create textarea {
+  height: 100px;
+  width: 75%;
+}
+.create .button input {
+  height: 30px;
+  background: #cfca9c;
+  color: #706d48;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+  font-family: 'Microsoft YaHei', Arial, Helvetica, sans-serif;
+}
+.list {
+  text-align: center;
+}
+.list a {
+  background: #fff;
+  border-radius: 5px;
+  margin: 5px;
+  padding: 10px;
+  width: 275px;
+}
+.list .in-box {
+  text-align: left;
+  color: #666;
+}
+.list .title {
+  padding: 5px 0 3px 0;
+  border-bottom: 1px solid #e27377;
+}
+.list h3 {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+  overflow: hidden;
+  width: 183px;
+  line-height: 20px;
+  height: 20px;
+}
+.list .data {
+  font-size: 12px;
+}
+.list p {
+  font-size: 14px;
+  padding-top: 5px;
+  line-height: 20px;
+  height: 25px;
+  overflow: hidden;
+}
+/* ==========================================================================
+   RWD
+   ==========================================================================*/
+@media screen and (max-width: 980px) {
+  body {
+    background: #bbb;
+  }
+}
+/* 電腦螢幕<788px */
+@media screen and (max-width: 788px) {
+  body {
+    background: #ccc;
+  }
+}
+/* 電腦螢幕<720px */
+@media screen and (max-width: 720px) {
+  body {
+    background: #ddd;
+  }
+}
+/* 電腦螢幕<480px */
+@media screen and (max-width: 480px) {
+  body {
+    background: #eee;
+  }
+}
+/* 變動class
+   ==========================================================================*/
+.show {
+  display: block;
+}
