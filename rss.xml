@@ -1,143 +1,152 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/">
 
 <channel>
   <title>提亞的任務紀錄</title>
   <link>http://tr-blank.github.io/</link>
   <description>提亞的個人網站、作品集、部落格</description>
   <copyright>提亞 © 2015. All Rights Reserved.</copyright>
+  <language>zh-tw</language>
+  <ttl>60</ttl>
+  <atom:link rel="self" href="http://tr-blank.github.io/rss.xml" type="application/rss+xml" />
   
   <item>
     <title>收藏</title>
     <link>http://tr-blank.github.io/post/00038</link>
     <description>收藏</description>
-    <guid>http://tr-blank.github.io/post/00038</guid>
+    <guid isPermaLink="true">http://tr-blank.github.io/post/00038</guid>
   </item>
 
   <item>
     <title>測試測試</title>
     <link>http://tr-blank.github.io/post/00037</link>
     <description>測試測試</description>
-    <guid>http://tr-blank.github.io/post/00037</guid>
+    <guid isPermaLink="true">http://tr-blank.github.io/post/00037</guid>
   </item>
 
   <item>
     <title>畢業專題-食破天驚宣傳影片</title>
     <link>http://tr-blank.github.io/post/00036</link>
     <description>畢業專題-食破天驚宣傳影片</description>
-    <guid>http://tr-blank.github.io/post/00036</guid>
+    <guid isPermaLink="true">http://tr-blank.github.io/post/00036</guid>
   </item>
 
   <item>
     <title>專題-APP操作展示影片</title>
     <link>http://tr-blank.github.io/post/00035</link>
     <description>專題-APP操作展示影片</description>
-    <guid>http://tr-blank.github.io/post/00035</guid>
+    <guid isPermaLink="true">http://tr-blank.github.io/post/00035</guid>
   </item>
 
   <item>
     <title>專題-3D操作展示影片</title>
     <link>http://tr-blank.github.io/post/00034</link>
     <description>專題-3D操作展示影片</description>
-    <guid>http://tr-blank.github.io/post/00034</guid>
+    <guid isPermaLink="true">http://tr-blank.github.io/post/00034</guid>
   </item>
 
   <item>
     <title>專題-全席投影展示影片</title>
     <link>http://tr-blank.github.io/post/00033</link>
     <description>專題-全席投影展示影片</description>
-    <guid>http://tr-blank.github.io/post/00033</guid>
+    <guid isPermaLink="true">http://tr-blank.github.io/post/00033</guid>
   </item>
 
   <item>
     <title>2013電信創新應用大賽</title>
     <link>http://tr-blank.github.io/post/00032</link>
     <description>2013電信創新應用大賽</description>
-    <guid>http://tr-blank.github.io/post/00032</guid>
+    <guid isPermaLink="true">http://tr-blank.github.io/post/00032</guid>
   </item>
 
   <item>
     <title>RC盃暴能熱戰宣傳影片</title>
     <link>http://tr-blank.github.io/post/00031</link>
     <description>RC盃暴能熱戰宣傳影片</description>
-    <guid>http://tr-blank.github.io/post/00031</guid>
+    <guid isPermaLink="true">http://tr-blank.github.io/post/00031</guid>
   </item>
 
   <item>
     <title>爆能特區-彼得與艾利</title>
     <link>http://tr-blank.github.io/post/00030</link>
     <description>爆能特區-彼得與艾利</description>
-    <guid>http://tr-blank.github.io/post/00030</guid>
+    <guid isPermaLink="true">http://tr-blank.github.io/post/00030</guid>
   </item>
 
   <item>
     <title>爆能特區-愛莉</title>
     <link>http://tr-blank.github.io/post/00029</link>
     <description>爆能特區-愛莉</description>
-    <guid>http://tr-blank.github.io/post/00029</guid>
+    <guid isPermaLink="true">http://tr-blank.github.io/post/00029</guid>
   </item>
 
   <item>
     <title>Somebody That I Used To Know</title>
     <link>http://tr-blank.github.io/post/00028</link>
     <description>Somebody That I Used To Know</description>
-    <guid>http://tr-blank.github.io/post/00028</guid>
+    <guid isPermaLink="true">http://tr-blank.github.io/post/00028</guid>
   </item>
 
   <item>
     <title>夏日友人帳</title>
     <link>http://tr-blank.github.io/post/00027</link>
     <description>夏日友人帳</description>
-    <guid>http://tr-blank.github.io/post/00027</guid>
+    <guid isPermaLink="true">http://tr-blank.github.io/post/00027</guid>
   </item>
 
   <item>
     <title>夏日友人帳</title>
     <link>http://tr-blank.github.io/post/00026</link>
     <description>夏日友人帳</description>
-    <guid>http://tr-blank.github.io/post/00026</guid>
+    <guid isPermaLink="true">http://tr-blank.github.io/post/00026</guid>
   </item>
 
   <item>
     <title>2012龍年賀圖</title>
     <link>http://tr-blank.github.io/post/00025</link>
     <description>2012龍年賀圖</description>
-    <guid>http://tr-blank.github.io/post/00025</guid>
+    <guid isPermaLink="true">http://tr-blank.github.io/post/00025</guid>
   </item>
 
   <item>
     <title>2012跨年賀圖</title>
     <link>http://tr-blank.github.io/post/00024</link>
     <description>2012跨年賀圖</description>
-    <guid>http://tr-blank.github.io/post/00024</guid>
+    <guid isPermaLink="true">http://tr-blank.github.io/post/00024</guid>
   </item>
 
   <item>
     <title>龍之谷-杰倫特</title>
     <link>http://tr-blank.github.io/post/00023</link>
     <description>龍之谷-杰倫特</description>
-    <guid>http://tr-blank.github.io/post/00023</guid>
+    <guid isPermaLink="true">http://tr-blank.github.io/post/00023</guid>
   </item>
 
   <item>
     <title>3000 kills賀圖</title>
     <link>http://tr-blank.github.io/post/00022</link>
     <description>3000 kills賀圖</description>
-    <guid>http://tr-blank.github.io/post/00022</guid>
+    <guid isPermaLink="true">http://tr-blank.github.io/post/00022</guid>
   </item>
 
   <item>
     <title>2011年跨年賀圖</title>
     <link>http://tr-blank.github.io/post/00002</link>
     <description>2011年跨年賀圖</description>
-    <guid>http://tr-blank.github.io/post/00002</guid>
+    <guid isPermaLink="true">http://tr-blank.github.io/post/00002</guid>
   </item>
 
   <item>
     <title>1000 kills賀圖</title>
     <link>http://tr-blank.github.io/post/00001</link>
     <description>1000 kills賀圖</description>
-    <guid>http://tr-blank.github.io/post/00001</guid>
+    <guid isPermaLink="true">http://tr-blank.github.io/post/00001</guid>
   </item>
 
 </channel>
