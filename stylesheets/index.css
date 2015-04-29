@@ -113,9 +113,6 @@ nav,
 section {
   display: block;
 }
-body {
-  line-height: 1;
-}
 ol,
 ul {
   list-style: none;
@@ -124,10 +121,10 @@ blockquote,
 q {
   quotes: none;
 }
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
+blockquote before,
+blockquote after,
+q before,
+q after {
   content: '';
   content: none;
 }
@@ -142,9 +139,19 @@ table {
 }
 html,
 body {
-  font-family: Microsoft YaHei, Arial, Helvetica, sans-serif;
+  font-family: Arial, Microsoft JhengHei, Microsoft YaHei, Helvetica, sans-serif;
   font-size: 16px;
   height: 100vh;
+  line-height: 1;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+  font-family: "Yu Gothic", SimHei;
 }
 a {
   display: inline-block;
@@ -165,6 +172,13 @@ img {
   max-height: 100%;
   max-width: 100%;
 }
+input {
+  outline: none;
+}
+textarea {
+  outline: none;
+  resize: none;
+}
 /* xmixins庫及css3動畫
    ==========================================================================*/
 .moveleft620 {
@@ -175,40 +189,68 @@ img {
 }
 /* 通用class
    ==========================================================================*/
+.right_in {
+  text-align: right;
+}
+.show {
+  display: block;
+}
 /* ==========================================================================
    網站樣式
    ==========================================================================*/
-.body {
-  display: table;
-  width: 100%;
-  height: 100%;
-}
-aside {
-  display: table-cell;
-  background: #3f7d9b;
-  color: #f1f1e8;
-  text-align: center;
-  width: 260px;
-  vertical-align: top;
+header {
+  height: 80px;
   padding: 10px;
+  position: absolute;
+  width: 100%;
+  top: 0px;
+  background: #3a4547;
 }
-aside h1 {
+header .logo {
+  text-align: center;
+  font-size: 1.5em;
+  color: #f1f1e8;
+  line-height: 60px;
+}
+header a {
+  font-size: 18px;
+  margin-left: 10px;
+  color: #a3c4cb;
+}
+.inner {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+nav {
+  background: #a4bbca;
+  color: #f3f3f3;
+  position: absolute;
+  width: 100%;
+  top: 80px;
+}
+nav ul {
+  display: inline-block;
+  vertical-align: top;
+  width: 49%;
   font-size: 20px;
-  padding: 10px 0;
+  line-height: 35px;
 }
-aside .follow {
-  margin: 20px 0;
+nav li {
+  font-size: 18px;
+  padding: 0 10px;
+  cursor: pointer;
 }
-aside .search {
-  margin: 20px 0;
+nav li:hover {
+  color: #fff;
 }
-aside nav a {
-  display: block;
-  color: #e2e1d6;
+.search {
+  display: inline-block;
+  vertical-align: top;
+  width: 50%;
+  font-size: 20px;
   line-height: 30px;
-  background: #4d8bae;
-  margin: 10px 0;
-  border-radius: 3px;
+  text-align: right;
+  position: relative;
 }
 input,
 textarea {
@@ -216,46 +258,94 @@ textarea {
   border: 0;
   padding: 5px;
 }
-article {
-  display: table-cell;
-  background: #f1f1e8;
-  text-align: center;
-  vertical-align: top;
-}
-article .inner {
-  max-width: 1000px;
-  margin: 0 auto;
-}
-header {
-  background: #cacabd;
-  padding: 10px;
-}
-header h2 {
-  font-size: 20px;
-  padding: 10px;
-}
-header .tags a {
-  padding: 0px 10px;
+.tags {
+  display: none;
+  position: absolute;
+  right: 0px;
+  width: 180px;
+  background: #fff;
+  top: 36px;
   border-radius: 3px;
-  background: #f1f1e8;
-  color: #3f7d9b;
-  margin: 5px;
-  height: 25px;
-  line-height: 25px;
+  font-size: 16px;
+  text-align: center;
 }
-.archives {
-  text-align: left;
+article {
+  min-height: 100%;
+  padding-top: 120px;
+  background: #f3f3f3;
+}
+.create {
+  display: inline-block;
+  vertical-align: top;
+  width: 50%;
+  padding: 10px 0;
+}
+.create input {
+  width: 100%;
+  line-height: 25px;
+  font-size: 18px;
+  padding-left: 20px;
+}
+.create .expandingArea {
+  position: relative;
+}
+.create textarea {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  padding: 20px;
+  padding-bottom: 0px;
+  line-height: 25px;
+  font-size: 18px;
+}
+.create pre {
+  display: block;
+  visibility: hidden;
+  min-height: 125px;
+  padding: 20px;
+  padding-bottom: 50px;
+  line-height: 25px;
+  font-size: 18px;
+}
+.create .button input {
+  height: 30px;
+  background: #cfca9c;
+  color: #706d48;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+  font-family: 'Microsoft YaHei', Arial, Helvetica, sans-serif;
+}
+.preview {
+  display: inline-block;
+  vertical-align: top;
+  width: 48%;
 }
 .list {
   text-align: center;
-  padding: 20px;
 }
 .list a {
   background: #fff;
   border-radius: 5px;
   margin: 5px;
   padding: 10px;
-  width: 275px;
+  width: 320px;
+  -moz-box-shadow: 0 1px 1px rgba(0,0,0,0.2);
+  -webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.2);
+  box-shadow: 0 1px 1px rgba(0,0,0,0.2);
+}
+.list .pic {
+  width: 300px;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+}
+.list img {
+  position: absolute;
+  max-height: none;
+  width: 100%;
 }
 .list .in-box {
   text-align: left;
@@ -263,21 +353,19 @@ header .tags a {
 }
 .list .title {
   padding: 5px 0 3px 0;
-  border-bottom: 1px solid #e27377;
 }
 .list h3 {
   display: inline-block;
   font-size: 16px;
   font-weight: bold;
   overflow: hidden;
-  width: 183px;
   line-height: 20px;
   height: 20px;
 }
 .list .data {
   font-size: 12px;
 }
-.list p {
+.list .word {
   font-size: 14px;
   padding-top: 5px;
   line-height: 20px;
@@ -309,9 +397,4 @@ header .tags a {
   body {
     background: #eee;
   }
-}
-/* 變動class
-   ==========================================================================*/
-.show {
-  display: block;
 }
