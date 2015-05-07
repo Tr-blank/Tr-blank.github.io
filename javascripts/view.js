@@ -8,16 +8,21 @@ $(function() {
             scrollTop:0
         },1000);
     });
-    $(".other a").css('top',300-$(".other").offset().top);
+    if($(".other a").length!=0){
+      $(".other a").css('top',300-$(".other").offset().top);
+    }
     $(window).scroll(function() {
         if ( $(this).scrollTop() > 300){
             $('#gotop').fadeIn("fast");
         } else {
             $('#gotop').stop().fadeOut("fast");
         }
-	    $(".other a").stop().animate({
-	            top:$(this).scrollTop()+300-$(".other").offset().top
-	    },1000);
+        if($(".other a").length!=0){
+          $(".other a").stop().animate({
+                  top:$(this).scrollTop()+300-$(".other").offset().top
+          },1000);
+        }
+
     	// console.log($(this).scrollTop()+100+'*'+$(".other").offset().top);
     });
 
