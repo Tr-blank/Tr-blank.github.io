@@ -249,54 +249,84 @@
             <use xlink:href="/images/icons.svg#0434-github"></use>
           </svg>
         </a>
-        <form action="/search" id='searchform' method='get'>
-         <input id="search" name="search" list="tags_list" placeholder="搜尋全部標籤" />
-        <datalist id="tags_list">
-        
-          <option value="日常">
-        
-          <option value="校園">
-        
-          <option value="CG">
-        
-          <option value="繪圖插畫">
-        
-          <option value="賀圖">
-        
-          <option value="網站參考">
-        
-          <option value="追蹤">
-        
-          <option value="程式專案">
-        
-          <option value="比賽影片">
-        
-          <option value="設計">
-        
-          <option value="剪輯">
-        
-          <option value="學習教材">
-        
-          <option value="音樂影片">
-        
-          <option value="資訊科技">
-        
-          <option value="極簡風">
-        
-          <option value="心之所向">
-        
-          <option value="Markdown">
-        
-        </datalist>
-        <input id="submit" type="submit" value="搜尋" />
-      </form>
-
-<!-- <form action='/p/searchs.html' id='searchform' method='get'>
-
-<input id='s' onblur='if ( this.value == &apos;站內關鍵字搜尋 . . .&apos; ) { this.value = &apos;&apos;; }' onfocus='if ( this.value == &apos;站內關鍵字搜尋 . . .&apos;) { this.value = &apos;&apos;; }' speech x-webkit-speech='true' type='text' value='站內關鍵字搜尋 . . .' x-webkit-grammar='builtin:search' onwebkitspeechchange='$(this).cloest('form').submit()'/>
-  <input type='submit' value='搜尋!'/>
-</form> -->
-
+        <form action='http://www.google.com/search' target="_blank" id='search' method='get'>
+          <input type="hidden" name="sitesearch" value="網址" />
+          <input id="s" class="search" name="q" type="text" list="tags_list" placeholder="搜尋全部標籤" />
+            <datalist id="tags_list">
+            
+              <option value="日常">
+            
+              <option value="校園">
+            
+              <option value="CG">
+            
+              <option value="繪圖插畫">
+            
+              <option value="賀圖">
+            
+              <option value="網站參考">
+            
+              <option value="追蹤">
+            
+              <option value="程式專案">
+            
+              <option value="比賽影片">
+            
+              <option value="設計">
+            
+              <option value="剪輯">
+            
+              <option value="學習教材">
+            
+              <option value="音樂影片">
+            
+              <option value="資訊科技">
+            
+              <option value="極簡風">
+            
+              <option value="心之所向">
+            
+              <option value="Markdown">
+            
+            </datalist>
+          <input id="r" class="submit" type="submit" value="搜尋" />
+        </form>
+<!--
+<form action='http://www.google.com/search' target="_blank" id='search' method='get'>
+<input type="hidden" name="sitesearch" value="網址" />
+<input id="s" name="q" type="text" value="" />
+<input id="r" type="submit" value="" />
+</form>
+<style>
+#search {
+width: 174px;
+padding: 10px;
+float: left;
+background: url(http://lh4.ggpht.com/_HjB26hkIEK8/S5stYYMzy1I/AAAAAAAALYk/1QdDy5THpe0/Search%20012.gif) no-repeat;
+}
+#s {
+width: 137px;
+height: 20px;
+float: left;
+margin-left: -6px;
+margin-top: -6px;
+border: none;
+background: none;
+color: #000000;
+font-family: Arial;
+}
+#r {
+width: 22px;
+height: 20px;
+margin-right: 12px;
+margin-top: -6px;
+float: right;
+cursor: pointer;
+border: none;
+background: none;
+}
+</style>
+-->
 
       </div>
     </hgroup>
