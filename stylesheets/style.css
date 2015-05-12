@@ -614,10 +614,12 @@ section .search-page {
   text-align: left;
   padding-top: 15px;
 }
-section .search-page .gsc-table-result{
+section .search-page .gsc-table-result {
   margin-left: 8px;
 }
-section .search-page .gsc-control-cse{
+section .search-page .gsc-control-cse {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
   box-sizing: content-box;
 }
 section >footer {
@@ -627,7 +629,6 @@ section >footer {
   font-size: 10px;
   color: #666;
 }
-
 /* ==========================================================================
    RWD
    ==========================================================================*/
