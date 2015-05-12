@@ -199,31 +199,31 @@ body {
   background: #f0f0f0;
   color: #4b4b4b;
 }
-header {
+hgroup {
   padding-top: 20px;
   position: relative;
   text-align: left;
 }
-header .title {
+hgroup .title {
   padding-left: 20px;
   text-align: left;
 }
-header h1 {
+hgroup h1 {
   font-size: 22px;
   padding-bottom: 10px;
   color: #727170;
   width: 100%;
 }
-header h2 {
+hgroup h2 {
   float: left;
   color: #969696;
 }
-header .follow {
+hgroup .follow {
   position: absolute;
   right: 20px;
   top: 25px;
 }
-header .follow .icon {
+hgroup .follow .icon {
   width: 33px;
   height: 33px;
   padding: 4px;
@@ -233,11 +233,50 @@ header .follow .icon {
   -o-transition: background 0.2s linear, box-shadow 0.2s linear;
   transition: background 0.2s linear, box-shadow 0.2s linear;
 }
-header .follow .icon:hover {
+hgroup .follow .icon:hover {
   background: #f6f6f6;
   -moz-box-shadow: 0px 0px 10px 0px #bbb;
   -webkit-box-shadow: 0px 0px 10px 0px #bbb;
   box-shadow: 0px 0px 10px 0px #bbb;
+}
+hgroup .follow form {
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+}
+hgroup .follow #search {
+  width: 150px;
+  border: 0px;
+  padding: 8px;
+  color: #fff;
+  border-radius: 3px;
+  background: #727170;
+}
+hgroup .follow #search::-moz-placeholder {
+  color: #fff;
+  opacity: 1;
+}
+hgroup .follow #search:-moz-placeholder {
+  color: #fff;
+}
+hgroup .follow #search:-ms-input-placeholder {
+  color: #fff;
+}
+hgroup .follow #search::-webkit-input-placeholder {
+  color: #fff;
+}
+hgroup .follow #search::-webkit-calendar-picker-indicator {
+  display: none;
+  -webkit-appearance: none;
+}
+hgroup .follow #submit {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  background: none;
+  border: 0px;
+  height: 100%;
+  cursor: pointer;
 }
 aside {
   position: fixed;
@@ -316,7 +355,7 @@ nav .now {
   margin: 10px 0;
   position: absolute;
   left: -120px;
-  width: 120px;
+  width: 200px;
   -webkit-transition: left 0.2s linear;
   -moz-transition: left 0.2s linear;
   -o-transition: left 0.2s linear;
@@ -349,17 +388,10 @@ nav .now {
   background: #5ea2b6;
 }
 .tags-box:hover .tags {
-  width: 120px;
+  width: 200px;
 }
 .tags-box:hover .box {
   left: 0px;
-}
-input,
-textarea {
-  width: 100%;
-  border: 0;
-  padding: 5px;
-  color: #bbb;
 }
 .main {
   text-align: center;
@@ -578,7 +610,7 @@ article .tags a:hover {
   height: 25px;
   overflow: hidden;
 }
-footer {
+section >footer {
   width: 100%;
   text-align: center;
   padding-top: 20px;

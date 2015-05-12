@@ -3,6 +3,15 @@ $(function() {
       $(".archives .word iframe").addClass('iframe');
       $(".archives .word em:first-of-type").addClass('em');
     }
+
+    $(".tags-box .tags input").on('focus',function(){
+      $(".tags-box .tags").css('width','200px');
+      $(".tags-box .tags .box").css('left','0px');
+    }).on('blur',function(){
+      $(".tags-box .tags").removeAttr('style');
+      $(".tags-box .tags .box").removeAttr('style');
+    });
+
     $("#gotop").click(function(){
         $("html,body").animate({
             scrollTop:0
@@ -10,6 +19,9 @@ $(function() {
     });
     if($(".other a").length!=0){
       $(".other a").css('top',300-$(".other").offset().top);
+    }
+    if($('#gotop').length!=0){
+      $('#gotop').css('display','none');
     }
     $(window).scroll(function() {
         if ( $(this).scrollTop() > 300){
@@ -23,24 +35,6 @@ $(function() {
           },1000);
         }
 
-    	// console.log($(this).scrollTop()+100+'*'+$(".other").offset().top);
     });
-
-
-
-		// var cl = new CanvasLoader('canvasloader-container');
-		// cl.setColor('#3e6fab'); // default is '#000000'
-		// cl.setShape('spiral'); // default is 'oval'
-		// cl.setDiameter(38); // default is 40
-		// cl.setDensity(14); // default is 40
-		// cl.setRange(1.5); // default is 1.3
-		// cl.setFPS(9); // default is 24
-		// cl.show(); // Hidden by default
-
-		// // This bit is only for positioning - not necessary
-		//   var loaderObj = document.getElementById("canvasLoader");
-  // 		loaderObj.style.position = "absolute";
-  // 		loaderObj.style["top"] = cl.getDiameter() * -0.5 + "px";
-  // 		loaderObj.style["left"] = cl.getDiameter() * -0.5 + "px";
 
 })
