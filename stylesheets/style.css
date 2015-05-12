@@ -10,6 +10,14 @@
  * css3動畫................(RESET)
  * 下拉是選單................(RESET)
  ==========================================================================*/
+/* xmixins庫及css3動畫
+   ==========================================================================*/
+.moveleft620 {
+  -webkit-animation: moveleft620;
+  -moz-animation: moveleft620;
+  -o-animation: moveleft620;
+  animation: moveleft620;
+}
 /* 瀏覽器樣式統一reset
    ==========================================================================*/
 html,
@@ -178,14 +186,6 @@ input {
 textarea {
   outline: none;
   resize: none;
-}
-/* xmixins庫及css3動畫
-   ==========================================================================*/
-.moveleft620 {
-  -webkit-animation: moveleft620;
-  -moz-animation: moveleft620;
-  -o-animation: moveleft620;
-  animation: moveleft620;
 }
 /* 通用class
    ==========================================================================*/
