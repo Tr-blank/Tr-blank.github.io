@@ -610,6 +610,10 @@ article .tags a:hover {
   height: 25px;
   overflow: hidden;
 }
+section .search-page {
+  text-align: left;
+  padding-top: 15px;
+}
 section >footer {
   width: 100%;
   text-align: center;
