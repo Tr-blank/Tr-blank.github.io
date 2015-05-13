@@ -35,6 +35,7 @@
 <body>
   <aside>
       <nav>
+      <div class="close-menu">關閉選單</div>
           <a href="/" class="item">
             <svg class="menu-icon">
               <use xlink:href="/images/icons.svg#0003-home"></use>
@@ -215,6 +216,11 @@
           <h1>嗨！我是提亞，歡迎來到我的個人網站及部落格。</h1>
           <h2>標籤-賀圖</h2>
       <div class="follow">
+        <a class="m-menu" href="#">
+          <svg class="icon">
+            <use xlink:href="/images/icons.svg#0190-menu"></use>
+          </svg>
+        </a>
         <a href="https://www.facebook.com/Tr.oxalis">
           <svg class="icon">
             <use xlink:href="/images/icons.svg#0398-facebook2"></use>
@@ -245,7 +251,17 @@
             <use xlink:href="/images/icons.svg#0434-github"></use>
           </svg>
         </a>
+        <a class="m-search" href="#">
+          <svg class="icon">
+            <use xlink:href="/images/icons.svg#0135-search"></use>
+          </svg>
+        </a>
         <form action='/search' id='search' method='get'>
+          <span class="x-search">
+            <svg class="search-icon">
+              <use xlink:href="/images/icons.svg#0272-cross"></use>
+            </svg>
+          </span>
           <input type="hidden" name="sitesearch" value="tr-blank.github.io" />
           <input id="s" class="search" name="q" type="text" list="tags_list" placeholder="請輸入關鍵字" />
             <datalist id="tags_list">

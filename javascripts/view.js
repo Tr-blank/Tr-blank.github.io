@@ -37,4 +37,30 @@ $(function() {
 
     });
 
+    $(".m-menu").on('click',function(){
+      $('aside').animate({
+          left:0
+      },200);
+    });
+    $(".close-menu").on('click',function(){
+      $('aside').animate({
+          left:-100
+      },200,function(){
+        $('aside').removeAttr('style');
+      });
+    });
+
+    $(".m-search").on('click',function(){
+      $(".x-search").css('display','inline-block');
+      $('.follow form').css('padding-left','20px').animate({
+          width:100+'%'
+      },200);
+    });
+    $(".x-search").on('click',function(){
+      $('.follow form').animate({
+          width:200
+      },200,function(){
+        $('.follow form,.x-search').removeAttr('style');
+      });
+    });
 })

@@ -218,19 +218,19 @@ hgroup h2 {
   float: left;
   color: #969696;
 }
-hgroup .follow {
+.follow {
   position: absolute;
   right: 20px;
   top: 10px;
   text-align: right;
 }
-hgroup .follow .m-menu {
+.follow .m-menu {
   display: none;
 }
-hgroup .follow .m-search {
+.follow .m-search {
   display: none;
 }
-hgroup .follow .icon {
+.follow .icon {
   width: 33px;
   height: 33px;
   padding: 4px;
@@ -242,18 +242,30 @@ hgroup .follow .icon {
   -o-transition: background 0.2s linear, box-shadow 0.2s linear;
   transition: background 0.2s linear, box-shadow 0.2s linear;
 }
-hgroup .follow .icon:hover {
+.follow .icon:hover {
   background: #f6f6f6;
   -moz-box-shadow: 0px 0px 10px 0px #bbb;
   -webkit-box-shadow: 0px 0px 10px 0px #bbb;
   box-shadow: 0px 0px 10px 0px #bbb;
 }
-hgroup .follow form {
+.follow form {
   display: block;
   vertical-align: top;
   position: relative;
 }
-hgroup .follow .search {
+.follow .x-search {
+  position: absolute;
+  top: 0px;
+  right: 30px;
+  display: none;
+  cursor: pointer;
+}
+.follow .x-search .search-icon {
+  width: 30px;
+  height: 30px;
+  padding: 10px;
+}
+.follow .search {
   width: 100%;
   border: 0px;
   padding: 8px;
@@ -264,24 +276,24 @@ hgroup .follow .search {
   background: #f6f6f6;
   border: 1px solid #c6c6c6;
 }
-hgroup .follow .search::-moz-placeholder {
+.follow .search::-moz-placeholder {
   color: #999;
   opacity: 1;
 }
-hgroup .follow .search:-moz-placeholder {
+.follow .search:-moz-placeholder {
   color: #999;
 }
-hgroup .follow .search:-ms-input-placeholder {
+.follow .search:-ms-input-placeholder {
   color: #999;
 }
-hgroup .follow .search::-webkit-input-placeholder {
+.follow .search::-webkit-input-placeholder {
   color: #999;
 }
-hgroup .follow .search::-webkit-calendar-picker-indicator {
+.follow .search::-webkit-calendar-picker-indicator {
   display: none;
   -webkit-appearance: none;
 }
-hgroup .follow .submit {
+.follow .submit {
   position: absolute;
   right: 0px;
   top: 0px;
@@ -298,7 +310,7 @@ hgroup .follow .submit {
   -o-transition: background 0.2s linear;
   transition: background 0.2s linear;
 }
-hgroup .follow .submit:hover {
+.follow .submit:hover {
   background-color: #c6c6c6;
 }
 aside {
@@ -309,6 +321,14 @@ aside {
   z-index: 10;
   vertical-align: top;
   background: #90c3d2;
+}
+nav .close-menu {
+  display: none;
+  height: 40px;
+  background: #656e71;
+  color: #eee;
+  line-height: 40px;
+  cursor: pointer;
 }
 nav >a {
   display: block;
@@ -740,7 +760,7 @@ section >footer {
   hgroup {
     padding-top: 80px;
   }
-  hgroup .follow {
+  .follow {
     top: 0px;
     background: none repeat scroll 0% 0% #dedede;
     width: 100%;
@@ -748,34 +768,45 @@ section >footer {
     height: 55px;
     text-align: right;
     padding: 10px;
+    padding-right: 170px;
   }
-  hgroup .follow form {
-    display: inline-block;
+  .follow form {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 150px;
   }
 }
 /* 電腦螢幕<788px */
 /* 電腦螢幕<720px */
 @media screen and (max-width: 720px) {
+  nav .close-menu {
+    display: block;
+  }
   hgroup {
     text-align: center;
   }
-  hgroup .follow {
+  .follow {
     text-align: center;
+    padding-right: 10px;
   }
-  hgroup .follow .m-search {
+  .follow .m-search {
     display: inline-block;
     float: right;
   }
-  hgroup .follow .m-menu {
+  .follow .m-menu {
     display: inline-block;
     float: left;
   }
-  hgroup .follow form {
+  .follow form {
     position: absolute;
     top: 10px;
     right: 10px;
     overflow: hidden;
     width: 0px;
+  }
+  .follow form .x-search {
+    display: inline-block;
   }
   aside {
     left: -100px;
