@@ -201,8 +201,8 @@ body {
 }
 hgroup {
   padding-top: 20px;
-  position: relative;
   text-align: left;
+  position: relative;
 }
 hgroup .title {
   padding-left: 20px;
@@ -221,7 +221,14 @@ hgroup h2 {
 hgroup .follow {
   position: absolute;
   right: 20px;
-  top: 25px;
+  top: 10px;
+  text-align: right;
+}
+hgroup .follow .m-menu {
+  display: none;
+}
+hgroup .follow .m-search {
+  display: none;
 }
 hgroup .follow .icon {
   width: 33px;
@@ -242,32 +249,33 @@ hgroup .follow .icon:hover {
   box-shadow: 0px 0px 10px 0px #bbb;
 }
 hgroup .follow form {
-  display: inline-block;
+  display: block;
   vertical-align: top;
   position: relative;
 }
 hgroup .follow .search {
-  width: 150px;
+  width: 100%;
   border: 0px;
   padding: 8px;
-  color: #cacaca;
+  color: #999;
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
   border-radius: 3px;
-  background: #727170;
+  background: #f6f6f6;
+  border: 1px solid #c6c6c6;
 }
 hgroup .follow .search::-moz-placeholder {
-  color: #cacaca;
+  color: #999;
   opacity: 1;
 }
 hgroup .follow .search:-moz-placeholder {
-  color: #cacaca;
+  color: #999;
 }
 hgroup .follow .search:-ms-input-placeholder {
-  color: #cacaca;
+  color: #999;
 }
 hgroup .follow .search::-webkit-input-placeholder {
-  color: #cacaca;
+  color: #999;
 }
 hgroup .follow .search::-webkit-calendar-picker-indicator {
   display: none;
@@ -284,14 +292,14 @@ hgroup .follow .submit {
   border-radius: 3px;
   height: 100%;
   cursor: pointer;
-  background: #727170 url("/images/0135-search.svg") no-repeat center;
+  background: url("/images/0135-search.svg") no-repeat center;
   -webkit-transition: background 0.2s linear;
   -moz-transition: background 0.2s linear;
   -o-transition: background 0.2s linear;
   transition: background 0.2s linear;
 }
 hgroup .follow .submit:hover {
-  background-color: #4a4a4a;
+  background-color: #c6c6c6;
 }
 aside {
   position: fixed;
@@ -424,7 +432,7 @@ nav .now {
 .main .inner {
   max-width: 1000px;
   margin: 0 auto;
-  padding: 20px 0;
+  padding: 25px 0;
 }
 .archives {
   text-align: left;
@@ -452,8 +460,8 @@ article .data {
 article .goto-icon {
   width: 30px;
   height: 30px;
+  padding: 5px;
   float: left;
-  margin-right: 10px;
 }
 article .tags-icon {
   width: 10px;
@@ -484,6 +492,16 @@ article .tags a:hover {
 }
 .word a {
   display: block;
+  color: #868686;
+  font-weight: bold;
+  text-decoration: underline;
+  -webkit-transition: color 0.2s linear;
+  -moz-transition: color 0.2s linear;
+  -o-transition: color 0.2s linear;
+  transition: color 0.2s linear;
+}
+.word a:hover {
+  color: #90c3d2;
 }
 .word .em {
   max-width: 853px;
@@ -514,7 +532,7 @@ article .tags a:hover {
   background: #ededed;
   position: relative;
 }
-.other a {
+.other .page-but {
   position: absolute;
   padding: 40px 5px;
   background: #fff;
@@ -529,7 +547,7 @@ article .tags a:hover {
   -o-transition: box-shadow 0.2s linear;
   transition: box-shadow 0.2s linear;
 }
-.other a:hover {
+.other .page-but:hover {
   -moz-box-shadow: 0 5px 8px rgba(0,0,0,0.2);
   -webkit-box-shadow: 0 5px 8px rgba(0,0,0,0.2);
   box-shadow: 0 5px 8px rgba(0,0,0,0.2);
@@ -538,11 +556,26 @@ article .tags a:hover {
   height: 40px;
   width: 40px;
 }
+.other .left-but {
+  left: -80px;
+}
+.other .right-but {
+  right: -80px;
+}
 .other .left-page {
-  left: -100px;
+  display: none;
+  color: #727170;
+}
+.other .left-page:hover {
+  text-decoration: underline;
 }
 .other .right-page {
-  right: -100px;
+  display: none;
+  color: #727170;
+  float: right;
+}
+.other .right-page:hover {
+  text-decoration: underline;
 }
 .comments {
   font-size: 24px;
@@ -563,8 +596,8 @@ article .tags a:hover {
 .list .goto-icon {
   width: 30px;
   height: 30px;
+  padding: 5px;
   float: left;
-  margin-right: 10px;
 }
 .list .box {
   background: #fff;
@@ -594,10 +627,23 @@ article .tags a:hover {
   line-height: 20px;
   overflow: hidden;
   position: relative;
+  margin-bottom: 10px;
 }
 .list .pic p {
   margin-bottom: 10px;
   line-height: 30px;
+}
+.list .pic a {
+  color: #868686;
+  font-weight: bold;
+  text-decoration: underline;
+  -webkit-transition: color 0.2s linear;
+  -moz-transition: color 0.2s linear;
+  -o-transition: color 0.2s linear;
+  transition: color 0.2s linear;
+}
+.list .pic a:hover {
+  color: #90c3d2;
 }
 .list img {
   width: 100%;
@@ -636,6 +682,23 @@ article .tags a:hover {
   height: 25px;
   overflow: hidden;
 }
+.list footer .tags-icon {
+  width: 10px;
+  height: 10px;
+}
+.list footer a {
+  color: #bdbdbd;
+  margin-right: 10px;
+  padding-bottom: 5px;
+  font-size: 14px;
+  -webkit-transition: color 0.2s linear;
+  -moz-transition: color 0.2s linear;
+  -o-transition: color 0.2s linear;
+  transition: color 0.2s linear;
+}
+.list footer a:hover {
+  color: #868686;
+}
 section .search-page {
   text-align: left;
   padding-top: 15px;
@@ -658,26 +721,77 @@ section >footer {
 /* ==========================================================================
    RWD
    ==========================================================================*/
+@media screen and (max-width: 1250px) {
+  .main .inner {
+    margin: 0 10px;
+    max-width: 1250px;
+  }
+  .other .page-but {
+    display: none;
+  }
+  .other .left-page {
+    display: inline-block;
+  }
+  .other .right-page {
+    display: inline-block;
+  }
+}
 @media screen and (max-width: 980px) {
-  body {
-    background: #bbb;
+  hgroup {
+    padding-top: 80px;
+  }
+  hgroup .follow {
+    top: 0px;
+    background: none repeat scroll 0% 0% #dedede;
+    width: 100%;
+    right: 0px;
+    height: 55px;
+    text-align: right;
+    padding: 10px;
+  }
+  hgroup .follow form {
+    display: inline-block;
   }
 }
 /* 電腦螢幕<788px */
-@media screen and (max-width: 788px) {
-  body {
-    background: #ccc;
-  }
-}
 /* 電腦螢幕<720px */
 @media screen and (max-width: 720px) {
-  body {
-    background: #ddd;
+  hgroup {
+    text-align: center;
   }
-}
-/* 電腦螢幕<480px */
-@media screen and (max-width: 480px) {
-  body {
-    background: #eee;
+  hgroup .follow {
+    text-align: center;
+  }
+  hgroup .follow .m-search {
+    display: inline-block;
+    float: right;
+  }
+  hgroup .follow .m-menu {
+    display: inline-block;
+    float: left;
+  }
+  hgroup .follow form {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    overflow: hidden;
+    width: 0px;
+  }
+  aside {
+    left: -100px;
+  }
+  .main {
+    margin-left: 0px;
+  }
+  .list {
+    margin: 15px 0px;
+  }
+  .list .box {
+    width: 100%;
+    margin: 0px;
+    margin-bottom: 20px;
+  }
+  .list .pic {
+    width: 100%;
   }
 }

@@ -17,8 +17,8 @@ $(function() {
             scrollTop:0
         },1000);
     });
-    if($(".other a").length!=0){
-      $(".other a").css('top',300-$(".other").offset().top);
+    if($(".other .page-but").length!=0){
+      $(".other .page-but").css('top',300-$(".other").offset().top);
     }
     if($('#gotop').length!=0){
       $('#gotop').css('display','none');
@@ -29,8 +29,8 @@ $(function() {
         } else {
             $('#gotop').stop().fadeOut("fast");
         }
-        if($(".other a").length!=0){
-          $(".other a").stop().animate({
+        if($(".other .page-but").length!=0){
+          $(".other .page-but").stop().animate({
                   top:$(this).scrollTop()+300-$(".other").offset().top
           },1000);
         }
