@@ -38,15 +38,15 @@ $(function() {
     });
 
     $(".m-menu").on('click',function(){
-      $('aside').animate({
+      $('.aside').animate({
           left:0
       },200);
     });
     $(".close-menu").on('click',function(){
-      $('aside').animate({
+      $('.aside').animate({
           left:-100
       },200,function(){
-        $('aside').removeAttr('style');
+        $('.aside').removeAttr('style');
       });
     });
 
