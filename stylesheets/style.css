@@ -728,7 +728,8 @@ article .tags a:hover {
 }
 section .search-page {
   text-align: left;
-  padding-top: 15px;
+  padding-top: 20px;
+  margin: 0 20px;
 }
 section .search-page .gsc-table-result {
   margin-left: 8px;
