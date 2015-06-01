@@ -36,7 +36,9 @@ $(function() {
         }
 
     });
-
+    Pace.on("done", function(){
+        $(".cover").fadeOut(1000);
+    });
     $(".m-menu").on('click',function(){
       $('.aside').animate({
           left:0

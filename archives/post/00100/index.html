@@ -7,19 +7,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">``
     <![endif]-->
     <title>
-    【記事】東海大學半日遊 ─ 提亞 | Tia's Personal Website
+    【記事】東海大學半日遊 | 提亞 ─ Tiya's Personal Website
     </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <meta name="description" content="提亞的個人網站、部落格及網路資源彙整。Tia's personal website and blog.">
     <meta name="keywords" content="校園,日常,作品集,提亞,Tia,Personal Website,Blog,部落格,網路資源,資訊技術,設計,插圖,網頁,前端">
     <meta name="author" content="提亞">
     <meta name="copyright" content="提亞版權所有">
+  <!-- <link rel="stylesheet" href="/plugins/Semantic-UI-1.12.3/dist/semantic.css" /> -->
+  <link rel="stylesheet" href="/plugins/Semantic-UI-1.12.3/dist/components/menu.min.css" />
+<!--   <link rel="stylesheet" href="/plugins/Semantic-UI-1.12.3/dist/components/sidebar.min.css" /> -->
+
+  <link rel="stylesheet" href="/plugins/IcoMoon/demo-files/demo.css">
+
     <link rel="stylesheet" href="/stylesheets/style.css" />
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
   <!-- PACE 載入條套件 -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/pace.min.js"></script>
   <!-- PACE 載入條樣式 -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/themes/silver/pace-theme-fill-left.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/themes/silver/pace-theme-loading-bar.css" />
   <!-- 自動增加css3前缀 -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
     <!-- 讓ie8以下支援html5語意標籤 -->
@@ -33,185 +39,246 @@
 </head>
 
 <body>
-  <h1><a class="title" href="/">
+  <div class="cover"></div>
+  <h1 class="header"><a class="title" href="/">
     嗨！我是提亞，歡迎來到我的個人網站及部落格。</a>
   </h1>
   <div class="aside">
-    <nav>
+    <nav class="ui demo left vertical blue labeled sidebar menu visible">
       <h2>首頁、作品集、部落格、資料夾、標籤群、歸檔</h2>
       <div class="close-menu">關閉選單</div>
-        <a href="/" class="item">
-          <svg class="menu-icon">
-            <use xlink:href="/images/icons.svg#0003-home"></use>
-          </svg>
-          <span>首頁</span></a>
-        <a href="/menu/word" class="item">
-          <svg class="menu-icon">
-            <use xlink:href="/images/icons.svg#0175-briefcase"></use>
-          </svg>
-          <span>作品集</span></a>
-        <a href="/menu/blog" class="item" >
-          <svg class="menu-icon">
-            <use xlink:href="/images/icons.svg#0032-book"></use>
-          </svg>
-          <span>部落格</span></a>
-        <a href="/menu/collect" class="item">
-          <svg class="menu-icon">
-            <use xlink:href="/images/icons.svg#0049-folder-open"></use>
-          </svg>
-          <span>資料夾</span></a>
-      <div class="tags-box">
-        <svg class="menu-icon">
-          <use xlink:href="/images/icons.svg#0055-price-tags"></use>
-        </svg>
+      <a href="/" class="item">
+         <i class="icon icon-home"></i>
+        <span>首頁</span></a>
+      <a href="/menu/word" class="item ">
+        <i class="icon icon-briefcase"></i>
+        <span>作品集</span></a>
+      <a href="/menu/blog" class="item ">
+        <i class="icon icon-blog"></i>
+        <span>部落格</span></a>
+      <a href="/menu/collect" class="item ">
+        <i class="icon icon-star-full"></i>
+        <span>收藏</span></a>
+      <div class="tags-box item now">
+        <i class="icon icon-price-tags"></i>
         <span class="tags-btn">標籤群</span>
         <div class="tags">
-          <div class="box">
-          <div class="title">所有標籤</div>
-              
-                <a href="/tags/00042">
-                  <svg class="tags-icon">
-                    <use xlink:href="/images/icons.svg#0054-price-tag"></use>
-                  </svg>
-                  校園
-                  <span>(32)</span>
-                </a>
-              
-                <a href="/tags/00043">
-                  <svg class="tags-icon">
-                    <use xlink:href="/images/icons.svg#0054-price-tag"></use>
-                  </svg>
-                  日常
-                  <span>(32)</span>
-                </a>
-              
-                <a href="/tags/00001">
-                  <svg class="tags-icon">
-                    <use xlink:href="/images/icons.svg#0054-price-tag"></use>
-                  </svg>
-                  CG
-                  <span>(11)</span>
-                </a>
-              
-                <a href="/tags/00003">
-                  <svg class="tags-icon">
-                    <use xlink:href="/images/icons.svg#0054-price-tag"></use>
-                  </svg>
-                  繪圖插畫
-                  <span>(11)</span>
-                </a>
-              
-                <a href="/tags/00002">
-                  <svg class="tags-icon">
-                    <use xlink:href="/images/icons.svg#0054-price-tag"></use>
-                  </svg>
-                  賀圖
-                  <span>(11)</span>
-                </a>
-              
-                <a href="/tags/00060">
-                  <svg class="tags-icon">
-                    <use xlink:href="/images/icons.svg#0054-price-tag"></use>
-                  </svg>
-                  網站參考
-                  <span>(6)</span>
-                </a>
-              
-                <a href="/tags/00049">
-                  <svg class="tags-icon">
-                    <use xlink:href="/images/icons.svg#0054-price-tag"></use>
-                  </svg>
-                  追蹤
-                  <span>(5)</span>
-                </a>
-              
-                <a href="/tags/00059">
-                  <svg class="tags-icon">
-                    <use xlink:href="/images/icons.svg#0054-price-tag"></use>
-                  </svg>
-                  設計
-                  <span>(4)</span>
-                </a>
-              
-                <a href="/tags/00007">
-                  <svg class="tags-icon">
-                    <use xlink:href="/images/icons.svg#0054-price-tag"></use>
-                  </svg>
-                  比賽影片
-                  <span>(4)</span>
-                </a>
-              
-                <a href="/tags/00006">
-                  <svg class="tags-icon">
-                    <use xlink:href="/images/icons.svg#0054-price-tag"></use>
-                  </svg>
-                  程式專案
-                  <span>(4)</span>
-                </a>
-              
-                <a href="/tags/00044">
-                  <svg class="tags-icon">
-                    <use xlink:href="/images/icons.svg#0054-price-tag"></use>
-                  </svg>
-                  學習教材
-                  <span>(2)</span>
-                </a>
-              
-                <a href="/tags/00004">
-                  <svg class="tags-icon">
-                    <use xlink:href="/images/icons.svg#0054-price-tag"></use>
-                  </svg>
-                  剪輯
-                  <span>(2)</span>
-                </a>
-              
-                <a href="/tags/00005">
-                  <svg class="tags-icon">
-                    <use xlink:href="/images/icons.svg#0054-price-tag"></use>
-                  </svg>
-                  音樂影片
-                  <span>(2)</span>
-                </a>
-              
-                <a href="/tags/00050">
-                  <svg class="tags-icon">
-                    <use xlink:href="/images/icons.svg#0054-price-tag"></use>
-                  </svg>
-                  資訊科技
-                  <span>(1)</span>
-                </a>
-              
-                <a href="/tags/00061">
-                  <svg class="tags-icon">
-                    <use xlink:href="/images/icons.svg#0054-price-tag"></use>
-                  </svg>
-                  極簡風
-                  <span>(1)</span>
-                </a>
-              
-                <a href="/tags/00062">
-                  <svg class="tags-icon">
-                    <use xlink:href="/images/icons.svg#0054-price-tag"></use>
-                  </svg>
-                  心之所向
-                  <span>(1)</span>
-                </a>
-              
-                <a href="/tags/00063">
-                  <svg class="tags-icon">
-                    <use xlink:href="/images/icons.svg#0054-price-tag"></use>
-                  </svg>
-                  Markdown
-                  <span>(1)</span>
-                </a>
-              
-          </div>
+            <div class="box">
+            <div class="title">所有標籤</div>
+                
+                  <a href="/tags/00043">
+                    <svg class="tags-icon">
+                      <use xlink:href="/images/icons.svg#0054-price-tag"></use>
+                    </svg>
+                    日常
+                    <span>(32)</span>
+                  </a>
+                
+                  <a href="/tags/00042">
+                    <svg class="tags-icon">
+                      <use xlink:href="/images/icons.svg#0054-price-tag"></use>
+                    </svg>
+                    校園
+                    <span>(32)</span>
+                  </a>
+                
+                  <a href="/tags/00001">
+                    <svg class="tags-icon">
+                      <use xlink:href="/images/icons.svg#0054-price-tag"></use>
+                    </svg>
+                    CG
+                    <span>(11)</span>
+                  </a>
+                
+                  <a href="/tags/00003">
+                    <svg class="tags-icon">
+                      <use xlink:href="/images/icons.svg#0054-price-tag"></use>
+                    </svg>
+                    繪圖插畫
+                    <span>(11)</span>
+                  </a>
+                
+                  <a href="/tags/00002">
+                    <svg class="tags-icon">
+                      <use xlink:href="/images/icons.svg#0054-price-tag"></use>
+                    </svg>
+                    賀圖
+                    <span>(11)</span>
+                  </a>
+                
+                  <a href="/tags/00060">
+                    <svg class="tags-icon">
+                      <use xlink:href="/images/icons.svg#0054-price-tag"></use>
+                    </svg>
+                    網站參考
+                    <span>(9)</span>
+                  </a>
+                
+                  <a href="/tags/00072">
+                    <svg class="tags-icon">
+                      <use xlink:href="/images/icons.svg#0054-price-tag"></use>
+                    </svg>
+                    前端資源
+                    <span>(8)</span>
+                  </a>
+                
+                  <a href="/tags/00049">
+                    <svg class="tags-icon">
+                      <use xlink:href="/images/icons.svg#0054-price-tag"></use>
+                    </svg>
+                    追蹤
+                    <span>(7)</span>
+                  </a>
+                
+                  <a href="/tags/00059">
+                    <svg class="tags-icon">
+                      <use xlink:href="/images/icons.svg#0054-price-tag"></use>
+                    </svg>
+                    設計
+                    <span>(6)</span>
+                  </a>
+                
+                  <a href="/tags/00007">
+                    <svg class="tags-icon">
+                      <use xlink:href="/images/icons.svg#0054-price-tag"></use>
+                    </svg>
+                    比賽影片
+                    <span>(4)</span>
+                  </a>
+                
+                  <a href="/tags/00006">
+                    <svg class="tags-icon">
+                      <use xlink:href="/images/icons.svg#0054-price-tag"></use>
+                    </svg>
+                    程式專案
+                    <span>(4)</span>
+                  </a>
+                
+                  <a href="/tags/00071">
+                    <svg class="tags-icon">
+                      <use xlink:href="/images/icons.svg#0054-price-tag"></use>
+                    </svg>
+                    CSS框架
+                    <span>(4)</span>
+                  </a>
+                
+                  <a href="/tags/00044">
+                    <svg class="tags-icon">
+                      <use xlink:href="/images/icons.svg#0054-price-tag"></use>
+                    </svg>
+                    學習教材
+                    <span>(3)</span>
+                  </a>
+                
+                  <a href="/tags/00004">
+                    <svg class="tags-icon">
+                      <use xlink:href="/images/icons.svg#0054-price-tag"></use>
+                    </svg>
+                    剪輯
+                    <span>(2)</span>
+                  </a>
+                
+                  <a href="/tags/00005">
+                    <svg class="tags-icon">
+                      <use xlink:href="/images/icons.svg#0054-price-tag"></use>
+                    </svg>
+                    音樂影片
+                    <span>(2)</span>
+                  </a>
+                
+                  <a href="/tags/00078">
+                    <svg class="tags-icon">
+                      <use xlink:href="/images/icons.svg#0054-price-tag"></use>
+                    </svg>
+                    延遲加載
+                    <span>(1)</span>
+                  </a>
+                
+                  <a href="/tags/00079">
+                    <svg class="tags-icon">
+                      <use xlink:href="/images/icons.svg#0054-price-tag"></use>
+                    </svg>
+                    JS框架
+                    <span>(1)</span>
+                  </a>
+                
+                  <a href="/tags/00080">
+                    <svg class="tags-icon">
+                      <use xlink:href="/images/icons.svg#0054-price-tag"></use>
+                    </svg>
+                    Node.js套件
+                    <span>(1)</span>
+                  </a>
+                
+                  <a href="/tags/00082">
+                    <svg class="tags-icon">
+                      <use xlink:href="/images/icons.svg#0054-price-tag"></use>
+                    </svg>
+                    彙總帖
+                    <span>(1)</span>
+                  </a>
+                
+                  <a href="/tags/00077">
+                    <svg class="tags-icon">
+                      <use xlink:href="/images/icons.svg#0054-price-tag"></use>
+                    </svg>
+                    瀑布流
+                    <span>(1)</span>
+                  </a>
+                
+                  <a href="/tags/00076">
+                    <svg class="tags-icon">
+                      <use xlink:href="/images/icons.svg#0054-price-tag"></use>
+                    </svg>
+                    CSS
+                    <span>(1)</span>
+                  </a>
+                
+                  <a href="/tags/00063">
+                    <svg class="tags-icon">
+                      <use xlink:href="/images/icons.svg#0054-price-tag"></use>
+                    </svg>
+                    Markdown
+                    <span>(1)</span>
+                  </a>
+                
+                  <a href="/tags/00062">
+                    <svg class="tags-icon">
+                      <use xlink:href="/images/icons.svg#0054-price-tag"></use>
+                    </svg>
+                    心之所向
+                    <span>(1)</span>
+                  </a>
+                
+                  <a href="/tags/00061">
+                    <svg class="tags-icon">
+                      <use xlink:href="/images/icons.svg#0054-price-tag"></use>
+                    </svg>
+                    極簡風
+                    <span>(1)</span>
+                  </a>
+                
+                  <a href="/tags/00050">
+                    <svg class="tags-icon">
+                      <use xlink:href="/images/icons.svg#0054-price-tag"></use>
+                    </svg>
+                    資訊科技
+                    <span>(1)</span>
+                  </a>
+                
+                  <a href="/tags/00083">
+                    <svg class="tags-icon">
+                      <use xlink:href="/images/icons.svg#0054-price-tag"></use>
+                    </svg>
+                    提亞個人網站
+                    <span>(1)</span>
+                  </a>
+                
+            </div>
         </div>
       </div>
       <a href="/archives" class="item">
-        <svg class="menu-icon">
-          <use xlink:href="/images/icons.svg#0049-folder-open"></use>
-        </svg>
+        <i class="icon icon-files-empty"></i>
         <span>歸檔</span></a>
     </nav>
     <div id="gotop">
@@ -422,9 +489,9 @@
       <input id="s" class="search" name="q" type="text" list="tags_list" placeholder="站內搜尋" />
         <datalist id="tags_list">
         
-          <option value="校園">
-        
           <option value="日常">
+        
+          <option value="校園">
         
           <option value="CG">
         
@@ -434,6 +501,8 @@
         
           <option value="網站參考">
         
+          <option value="前端資源">
+        
           <option value="追蹤">
         
           <option value="設計">
@@ -442,19 +511,35 @@
         
           <option value="程式專案">
         
+          <option value="CSS框架">
+        
           <option value="學習教材">
         
           <option value="剪輯">
         
           <option value="音樂影片">
         
-          <option value="資訊科技">
+          <option value="延遲加載">
         
-          <option value="極簡風">
+          <option value="JS框架">
+        
+          <option value="Node.js套件">
+        
+          <option value="彙總帖">
+        
+          <option value="瀑布流">
+        
+          <option value="CSS">
+        
+          <option value="Markdown">
         
           <option value="心之所向">
         
-          <option value="Markdown">
+          <option value="極簡風">
+        
+          <option value="資訊科技">
+        
+          <option value="提亞個人網站">
         
         </datalist>
       <input id="r" class="submit" type="submit" value="" />

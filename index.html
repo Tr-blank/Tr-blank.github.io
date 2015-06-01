@@ -6,19 +6,33 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">``
   <![endif]-->
   <title>
-    提亞 | Tia's Personal Website
+    提亞 ─ Tiya's Personal Website
   </title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-    <meta name="description" content="提亞的個人網站、部落格及網路資源彙整。Tia's personal website and blog.">
-    <meta name="keywords" content="作品集,提亞,Tia,Personal Website,Blog,部落格,網路資源,資訊技術,設計,插圖,網頁,前端">
+    <meta name="description" content="提亞的個人網站、部落格及網路資源彙整。Tia's personal website and new-tab.">
+    <meta name="keywords" content="作品集,提亞,Tia,Personal Website,new-tab,部落格,網路資源,資訊技術,設計,插圖,網頁,前端">
     <meta name="author" content="提亞">
     <meta name="copyright" content="提亞版權所有">
-  <link rel="stylesheet" href="/stylesheets/style.css" />
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <link rel="stylesheet" href="/plugins/onepage-scroll-master/onepage-scroll.css" />
+
+  <!-- <link rel="stylesheet" href="/plugins/Semantic-UI-1.12.3/dist/semantic.css" /> -->
+  <link rel="stylesheet" href="/plugins/Semantic-UI-1.12.3/dist/components/sidebar.min.css" />
+  <link rel="stylesheet" href="/plugins/Semantic-UI-1.12.3/dist/components/menu.min.css" />
+  <link rel="stylesheet" href="/plugins/Semantic-UI-1.12.3/dist/components/progress.min.css" />
+
+  <link rel="stylesheet" href="/plugins/IcoMoon/demo-files/demo.css">
+  <link rel="stylesheet" href="/stylesheets/web-index.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+  <!-- // <script src="/plugins/Semantic-UI-1.12.3/dist/semantic.js"></script> -->
+  <script src="/plugins/Semantic-UI-1.12.3/dist/components/sidebar.min.js"></script>
+  <script src="/plugins/Semantic-UI-1.12.3/dist/components/progress.min.js"></script>
+
+  <script src="/plugins/onepage-scroll-master/jquery.onepage-scroll.js"></script>
   <!-- PACE 載入條套件 -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/pace.min.js"></script>
   <!-- PACE 載入條樣式 -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/themes/silver/pace-theme-fill-left.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/themes/silver/pace-theme-loading-bar.css" />
   <!-- 自動增加css3前缀 -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
   <!-- 讓ie8以下支援html5語意標籤 -->
@@ -30,117 +44,407 @@
   <script src="http://cdnjs.cloudflare.com/ajax/libs/selectivizr/1.0.2/selectivizr-min.js"></script>
   <![endif]-->
   </head>
-<body>
-  <h1><a class="title" href="/">
-    嗨！我是提亞，歡迎來到我的個人網站及部落格。</a>
-  </h1>
-  <section class="main">
-    <h2>首頁</h2>
-    <div class="list">
+<body class="pushable">
+  <h1>Tiya</h1>
+  <div class="cover"></div>
+  <nav class="ui demo left vertical blue labeled icon sidebar menu ">
+      <h2>首頁、作品集、部落格、資料夾、歸檔</h2>
+      <a href="/" class="item">
+        <i class="icon icon-home"></i>
+        首頁
+      </a>
+      <a href="/menu/word" class="item">
+        <i class="icon icon-briefcase"></i>
+        作品集
+      </a>
+      <a href="/menu/blog" class="item">
+        <i class="icon icon-blog"></i>
+        部落格
+      </a>
+      <a href="/menu/collect" class="item">
+        <i class="icon icon-star-full"></i>
+        收藏
+      </a>
+      <a  href="/archives" class="item">
+        <i class="icon icon-files-empty"></i>
+        歸檔
+      </a>
+  </nav>
+  <div class="pusher">
+  <div class="logo">Tiya</div>
+<!--     <div class="sidebar-button"> -->
+      <div class="ui teal launch right attached fixed button">
+        <i class="icon icon-menu"></i>
+      </div>
+    <!-- </div> -->
+    <div class="main">
+      <section class="page tiya">
+        <div class="wrapper">
 
-    </div>
-  </section>
-  <div class="aside">
-      <nav>
-          <h2>首頁、作品集、部落格、資料夾、標籤群、歸檔</h2>
-        <div class="close-menu">關閉選單</div>
-          <a href="/" class="item">
-            <svg class="menu-icon">
-              <use xlink:href="/images/icons.svg#0003-home"></use>
-            </svg>
-            <span>首頁</span></a>
-          <a href="/menu/word" class="item">
-            <svg class="menu-icon">
-              <use xlink:href="/images/icons.svg#0175-briefcase"></use>
-            </svg>
-            <span>作品集</span></a>
-          <a href="/menu/blog" class="item">
-            <svg class="menu-icon">
-              <use xlink:href="/images/icons.svg#0032-book"></use>
-            </svg>
-            <span>部落格</span></a>
-          <a href="/menu/collect" class="item ">
-            <svg class="menu-icon">
-              <use xlink:href="/images/icons.svg#0049-folder-open"></use>
-            </svg>
-            <span>資料夾</span></a>
-        <div class="tags-box">
-          <svg class="menu-icon">
-            <use xlink:href="/images/icons.svg#0055-price-tags"></use>
-          </svg>
-          <span class="tags-btn">標籤群</span>
-          <div class="tags">
+          <h1>
+            <a class="title" href="/">
+            提亞
+            </a>
+          </h1>
+          <h2>Combine design & development</h2>
+          <p>嗨！我是提亞──期盼成為具有美感及創新思維的開發者。</p>
+          <p>主要工作是精彩可期的前端開發。</p>
+          <p>我喜歡追隨日新月異的資訊技術，用更高效、更完善、更美觀的方式滿足人們的需求。在電腦休息時，我會背著包、拿著筆，描繪下旅途的足跡。</p>
+          <p>設計與程式伴隨著我的生活，記錄在<a href="/">提亞 ─ Tiya's Personal Website</a>。</p>
+          
+        </div>
+      </section>
+      
+<!--       <section class="page skill">
+        <div class="wrapper">
+          技能Skills
+          <h2>能力</h2>
+          <div class="inner">
+              <ul>
+                <li>
+                  <span>SEO</span>
+                  <div class="ui active progress" >
+                    <div class="bar"><a href="/menu/blog"><i class="icon icon-new-tab"></i></a>RWD,W3C,HTML5</div>
+                  </div>
+                </li>
+                <li><span>RWD</span>
+                  <div class="ui active progress" >
+                    <div class="bar"><a href="/menu/blog"><i class="icon icon-new-tab"></i></a>google</div>
+                  </div>
+                </li>
+                <li><span>跨瀏覽器</span>
+                  <div class="ui active progress" >
+                    <div class="bar"><a href="/menu/blog"><i class="icon icon-new-tab"></i></a>reset,normalize.css,html5shiv-printshiv,selectivizr,prefixfree</div>
+                  </div>
+                </li>
+                <li><span>效能測試</span>
+                  <div class="ui active progress" >
+                    <div class="bar"><a href="/menu/blog"><i class="icon icon-new-tab"></i></a>google</div>
+                  </div>
+                </li>
+                <li><span>ajax</span>
+                  <div class="ui active progress" >
+                    <div class="bar"><a href="/menu/blog"><i class="icon icon-new-tab"></i></a>jquery</div>
+                  </div>
+                </li>
+              </ul>
           </div>
         </div>
-          <a href="/archives" class="item">
-            <svg class="menu-icon">
-              <use xlink:href="/images/icons.svg#0049-folder-open"></use>
-            </svg>
-            <span>歸檔</span></a>
-      </nav>
-      <div id="gotop">
-            <svg class="gotop-icon">
-              <use xlink:href="/images/icons.svg#0294-eject"></use>
-            </svg>
-      </div>
+      </section> -->
+      <section class="page skill">
+        <div class="wrapper">
+          <!-- 技能Skills -->
+          <h2>前端技術</h2>
+          <div class="inner">
+            <div class="box">
+              <h3>軟體工具</h3>
+              <ul>
+                <li><span>Sublime Text</span>
+                  <div class="ui green active progress degree4" >
+                  <div class="bar"><a href="/menu/blog"><i class="icon icon-new-tab"></i></a></div>
+                  </div>
+                </li>
+                <li><span>Photoshop</span>
+                  <div class="ui green active progress degree3" >
+                    <div class="bar"><a href="/menu/blog"><i class="icon icon-new-tab"></i></a></div>
+                  </div>
+                </li>
+                <li><span>Dreamweaver</span>
+                  <div class="ui green active progress degree3" >
+                    <div class="bar"><a href="/menu/blog"><i class="icon icon-new-tab"></i></a></div>
+                  </div>
+                </li>
+                <li><span>Flash</span>
+                  <div class="ui green active progress degree2" >
+                    <div class="bar"><a href="/menu/blog"><i class="icon icon-new-tab"></i></a></div>
+                  </div>
+                </li>
+                <li><span>Bower</span>
+                  <div class="ui green active progress degree1" >
+                    <div class="bar"><a href="/menu/blog"><i class="icon icon-new-tab"></i></a></div>
+                  </div>
+                </li>
+                <li><span>Gulp</span>
+                  <div class="ui green active progress degree1" >
+                    <div class="bar"><a href="/menu/blog"><i class="icon icon-new-tab"></i></a></div>
+                  </div>
+                </li>
+                <li><span>Browserify</span>
+                  <div class="ui green active progress degree1" >
+                    <div class="bar"><a href="/menu/blog"><i class="icon icon-new-tab"></i></a></div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="box">
+             <h3>HTML&CSS 前處理器</h3>
+              <ul>
+                <li><span>Stylus</span>
+                  <div class="ui orange active progress degree4" >
+                    <div class="bar"><a href="/menu/blog"><i class="icon icon-new-tab"></i></a></div>
+                  </div>
+                </li>
+                <li><span>CSS3</span>
+                  <div class="ui orange active progress degree3" >
+                    <div class="bar"><a href="/menu/blog"><i class="icon icon-new-tab"></i></a></div>
+                  </div>
+                </li>
+                <li><span>HTML5</span>
+                  <div class="ui orange active progress degree3" >
+                    <div class="bar"><a href="/menu/blog"><i class="icon icon-new-tab"></i></a></div>
+                  </div>
+                </li>
+                <li><span>SCSS</span>
+                  <div class="ui orange active progress degree1" >
+                    <div class="bar"><a href="/menu/blog"><i class="icon icon-new-tab"></i></a></div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="box">
+             <h3>javascript 相關</h3>
+              <ul>
+                <li>
+                  <span>Jquery</span>
+                  <div class="ui blue active progress degree4" >
+
+                    <div class="bar"><a href="/menu/blog"><i class="icon icon-new-tab"></i></a></div>
+                  </div>
+                </li>
+                <li><span>EJS</span>
+                  <div class="ui blue active progress degree4" >
+                    <div class="bar"><a href="/menu/blog"><i class="icon icon-new-tab"></i></a></div>
+                  </div>
+                </li>
+                <li><span>D3.js</span>
+                  <div class="ui blue active progress degree1" >
+                    <div class="bar"><a href="/menu/blog"><i class="icon icon-new-tab"></i></a></div>
+                  </div>
+                </li>
+                <li><span>AngularJS 2</span>
+                  <div class="ui blue active progress degree1" >
+                    <div class="bar"><a href="/menu/blog"><i class="icon icon-new-tab"></i></a></div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="box">
+             <h3>CSS 框架</h3>
+              <ul>
+                <li><span>SemanticUI</span>
+                  <div class="ui yellow active progress degree3" >
+                    <div class="bar"><a href="/menu/blog"><i class="icon icon-new-tab"></i></a></div>
+                  </div>
+                </li>
+                <li><span>Materialize</span>
+                  <div class="ui yellow active progress degree2" >
+                    <div class="bar"><a href="/menu/blog"><i class="icon icon-new-tab"></i></a></div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="page skill">
+        <div class="wrapper">
+          <!-- 技能 -->
+          <h2>後端技術</h2>
+          <div class="inner">
+             <h3>軟體工具</h3>
+              <ul>
+                <li><span>Sublime Text</span>
+                  <div class="ui green active progress degree4" >
+                    <div class="bar"><a href="/menu/blog"><i class="icon icon-new-tab"></i></a></div>
+                  </div>
+                </li>
+                <li><span>Git</span>
+                  <div class="ui green active progress degree2" >
+                    <div class="bar"><a href="/menu/blog"><i class="icon icon-new-tab"></i></a></div>
+                  </div>
+                </li>
+                <li><span>Bower</span>
+                  <div class="ui green active progress degree1" >
+                    <div class="bar"><a href="/menu/blog"><i class="icon icon-new-tab"></i></a></div>
+                  </div>
+                </li>
+                <li><span>Gulp</span>
+                  <div class="ui green active progress degree1" >
+                    <div class="bar"><a href="/menu/blog"><i class="icon icon-new-tab"></i></a></div>
+                  </div>
+                </li>
+              </ul>
+             <h3>javascript 相關</h3>
+              <ul>
+                <li><span>Node.JS</span>
+                  <div class="ui blue active progress degree3" >
+                    <div class="bar"><a href="/menu/blog"><i class="icon icon-new-tab"></i></a></div>
+                  </div>
+                </li>
+                <li><span>express.js</span>
+                  <div class="ui blue active progress degree3" >
+                    <div class="bar"><a href="/menu/blog"><i class="icon icon-new-tab"></i></a></div>
+                  </div>
+                </li>
+                <li><span>async</span>
+                  <div class="ui blue active progress degree3" >
+                    <div class="bar"><a href="/menu/blog"><i class="icon icon-new-tab"></i></a></div>
+                  </div>
+                </li>
+                <li><span>cron</span>
+                  <div class="ui blue active progress degree3" >
+                    <div class="bar"><a href="/menu/blog"><i class="icon icon-new-tab"></i></a></div>
+                  </div>
+                </li>
+                <li><span>lodash</span>
+                  <div class="ui blue active progress degree2" >
+                    <div class="bar"><a href="/menu/blog"><i class="icon icon-new-tab"></i></a></div>
+                  </div>
+                </li>
+              </ul>
+             <h3>資料庫</h3>
+              <ul>
+                <li><span>maria(mysql)</span>
+                  <div class="ui red active progress degree1" >
+                    <div class="bar"><a href="/menu/blog"><i class="icon icon-new-tab"></i></a></div>
+                  </div>
+                </li>
+              </ul>
+          </div>
+
+        </div>
+      </section>
+      <section class="page work">
+        <div class="wrapper">
+          <!-- 作品 WORKS -->
+          <h2>WORKS</h2>
+          <div class="inner">
+            <h3>網站及APP專案</h3>
+            <div class="table">
+              <div class="list td">
+                
+                <div class='box'>
+                  <div class="pic">
+                    <p><em><iframe src="https://www.youtube.com/embed/W1eBSUUnLg4?rel=0&controls=0" frameborder="0" allowfullscreen></iframe></em></p>
+
+                  </div>
+                </div>
+                
+                <div class='box'>
+                  <div class="pic">
+                    <p><em><iframe src="https://www.youtube.com/embed/q_l_nhDMbeg?rel=0&controls=0" frameborder="0" allowfullscreen></iframe></em></p>
+
+                  </div>
+                </div>
+                
+                <div class='box'>
+                  <div class="pic">
+                    <p><em><iframe src="https://www.youtube.com/embed/WsuDml1sPlg?rel=0&controls=0" frameborder="0" allowfullscreen></iframe></em></p>
+
+                  </div>
+                </div>
+                
+              </div>
+              <div class='td'>
+                <a href="/menu/word" class="more">
+                  <i class="icon icon-new-tab"></i>
+                </a>
+              </div>
+            </div>
+            <h3>電繪插畫</h3>
+            <div class="table">
+              <div class="list td">
+                
+                  <div class='box'>
+                     <div class="pic">
+                      <p><a href="/post/00030"><img src="https://farm9.staticflickr.com/8647/16251376356_2787ed9c2f_o.jpg" alt=""></a></p>
+
+                    </div>
+                  </div>
+                
+                  <div class='box'>
+                     <div class="pic">
+                      <p><a href="/post/00029"><img src="https://farm9.staticflickr.com/8623/16276483062_092d80c14a_o.jpg" alt=""></a></p>
+
+                    </div>
+                  </div>
+                
+                  <div class='box'>
+                     <div class="pic">
+                      <p><a href="/post/00028"><img src="https://farm8.staticflickr.com/7488/16275527611_8d929e3969_o.jpg" alt=""></a></p>
+
+                    </div>
+                  </div>
+                
+              </div>
+              <div class='td'>
+                <a href="/menu/word" class="more">
+                  <i class="icon icon-new-tab"></i>
+                </a>
+              </div>
+            </div>
+            <h3>影片剪輯製作</h3>
+            <div class="table">
+              <div class="list td viedo-td">
+                
+                  <div class='box'>
+                    <div class="pic">
+                      <p><em><iframe src="https://www.youtube.com/embed/W1eBSUUnLg4?rel=0&controls=0" frameborder="0" allowfullscreen></iframe></em></p>
+
+                    </div>
+                  </div>
+                
+                  <div class='box'>
+                    <div class="pic">
+                      <p><em><iframe src="https://www.youtube.com/embed/q_l_nhDMbeg?rel=0&controls=0" frameborder="0" allowfullscreen></iframe></em></p>
+
+                    </div>
+                  </div>
+                
+              </div>
+              <div class='td'>
+                <a href="/menu/word" class="more">
+                  <i class="icon icon-new-tab"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="page contact">
+        <div class="wrapper">
+          <!-- 聯絡 -->
+          <h2>Contact</h2>
+          <div class="follow">
+            <a href="https://www.facebook.com/Tr.oxalis">
+              <i class="icon icon-facebook2"></i>
+            </a>
+            <a href="https://twitter.com/Tr_blank">
+              <i class="icon icon-twitter"></i>
+            </a>
+            <a href="https://www.flickr.com/photos/tr-blank/">
+              <i class="icon icon-flickr3"></i>
+            </a>
+            <a href="http://codepen.io/Trblank/">
+              <i class="icon icon-codepen"></i>
+            </a>
+            <a href="https://www.youtube.com/user/Trblank0122/">
+              <i class="icon icon-youtube3"></i>
+            </a>
+            <a href="https://github.com/Tr-blank">
+              <i class="icon icon-github"></i>
+            </a>
+          </div>
+          
+          <footer class="footer">
+            <div class="Copyright">Copyright © 2015 By <a href="/">提亞</a> All rights reserved</div>
+          </footer>
+        </div>
+      </section>
+    </div>
   </div>
-  <aside class="follow">
-    <h2>網站鏈結</h2>
-    <a class="m-menu" href="#">
-      <svg class="icon">
-        <use xlink:href="/images/icons.svg#0190-menu"></use>
-      </svg>
-    </a>
-    <a href="https://www.facebook.com/Tr.oxalis">
-      <svg class="icon">
-        <use xlink:href="/images/icons.svg#0398-facebook2"></use>
-      </svg>
-    </a>
-    <a href="https://twitter.com/Tr_blank">
-      <svg class="icon">
-        <use xlink:href="/images/icons.svg#0402-twitter"></use>
-      </svg>
-    </a>
-    <a href="https://www.flickr.com/photos/tr-blank/">
-      <svg class="icon">
-        <use xlink:href="/images/icons.svg#0419-flickr3"></use>
-      </svg>
-    </a>
-    <a href="http://codepen.io/Trblank/">
-      <svg class="icon">
-        <use xlink:href="/images/icons.svg#0485-codepen"></use>
-      </svg>
-    </a>
-    <a href="https://www.youtube.com/user/Trblank0122/">
-      <svg class="icon">
-        <use xlink:href="/images/icons.svg#0410-youtube3"></use>
-      </svg>
-    </a>
-    <a href="https://github.com/Tr-blank">
-      <svg class="icon">
-        <use xlink:href="/images/icons.svg#0434-github"></use>
-      </svg>
-    </a>
-    <a class="m-search" href="#">
-      <svg class="icon">
-        <use xlink:href="/images/icons.svg#0135-search"></use>
-      </svg>
-    </a>
-    <form action='/search' id='search' method='get'>
-      <span class="x-search">
-        <svg class="search-icon">
-          <use xlink:href="/images/icons.svg#0272-cross"></use>
-        </svg>
-      </span>
-      <input type="hidden" name="sitesearch" value="tr-blank.github.io" />
-      <input id="s" class="search" name="q" type="text" list="tags_list" placeholder="站內搜尋" />
-      <input id="r" class="submit" type="submit" value="" />
-    </form>
-  </aside>
-  <footer class="footer">
-    <div class="Copyright">Copyright © 2015 By <a href="/">提亞</a> All rights reserved</div>
-  </footer>
-<script src="/javascripts/view.js"></script>
+
+<script src="/javascripts/web_index.js"></script>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

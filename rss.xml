@@ -8,7 +8,7 @@
 	xmlns:slash="http://purl.org/rss/1.0/modules/slash/">
 
 <channel>
-  <title>提亞 | Tia's Personal Website</title>
+  <title>提亞 ─ Tiya's Personal Website</title>
   <link>http://tr-blank.github.io/</link>
   <description>提亞的個人網站、作品集、部落格</description>
   <copyright>提亞 © 2015. All Rights Reserved.</copyright>
@@ -17,7 +17,7 @@
   <pubDate>Wed, 20 May 2015 12:00:00 GMT</pubDate>
   <lastBuildDate>
   
-  Wed, 20 May 2015 16:35:36 GMT
+  Mon, 01 Jun 2015 14:56:30 GMT
   </lastBuildDate>
   <category>Web development</category>
   <category>BLOG</category>
@@ -26,6 +26,27 @@
   <ttl>60</ttl>
   <atom:link rel="self" href="http://tr-blank.github.io/rss.xml" type="application/rss+xml" />
   
+  <item>
+    <title>提亞個人網站更新紀錄</title>
+    <link>http://tr-blank.github.io/menu/blog/00135</link>
+    <description><![CDATA[
+    	<p>一個前端人員摔進後端坑的哀號史，將初次使用Node.js來開發網站的跌跌撞撞過程集中成一篇清單的彙總帖。</p>
+<p>目前仍在坑裡掙扎中詳細記錄有待日後補完，在此先記錄下開發<strong>提亞─Tiya&#39;s Personal Website</strong>時因各種需求而遇到一堆疑難雜症的救濟關鍵字，以防之後健忘走回頭路。</p>
+
+    	<p><a href="http://tr-blank.github.io/menu/blog/00135">...繼續閱讀...</a></p>]]>
+    </description>
+    <guid isPermaLink="true">http://tr-blank.github.io/post/00135</guid>
+  <pubDate>
+    
+  	Mon, 01 Jun 2015 14:56:30 GMT
+  </pubDate>
+	
+	    <category>彙總帖</category>
+	
+	    <category>提亞個人網站</category>
+	
+  </item>
+
   <item>
     <title>【平日】料理新手之起步記錄</title>
     <link>http://tr-blank.github.io/menu/blog/00105</link>
@@ -37,7 +58,7 @@
     <guid isPermaLink="true">http://tr-blank.github.io/post/00105</guid>
   <pubDate>
     
-  	Wed, 20 May 2015 16:35:36 GMT
+  	Mon, 01 Jun 2015 14:56:30 GMT
   </pubDate>
 	
 	    <category>校園</category>
@@ -57,7 +78,7 @@
     <guid isPermaLink="true">http://tr-blank.github.io/post/00103</guid>
   <pubDate>
     
-  	Wed, 20 May 2015 16:35:36 GMT
+  	Mon, 01 Jun 2015 14:56:30 GMT
   </pubDate>
 	
 	    <category>校園</category>
@@ -81,7 +102,7 @@
     <guid isPermaLink="true">http://tr-blank.github.io/post/00102</guid>
   <pubDate>
     
-  	Wed, 20 May 2015 16:35:36 GMT
+  	Mon, 01 Jun 2015 14:56:30 GMT
   </pubDate>
 	
 	    <category>校園</category>
@@ -106,7 +127,7 @@
     <guid isPermaLink="true">http://tr-blank.github.io/post/00101</guid>
   <pubDate>
     
-  	Wed, 20 May 2015 16:35:36 GMT
+  	Mon, 01 Jun 2015 14:56:30 GMT
   </pubDate>
 	
 	    <category>校園</category>
@@ -127,7 +148,7 @@
     <guid isPermaLink="true">http://tr-blank.github.io/post/00100</guid>
   <pubDate>
     
-  	Wed, 20 May 2015 16:35:36 GMT
+  	Mon, 01 Jun 2015 14:56:30 GMT
   </pubDate>
 	
 	    <category>校園</category>
@@ -149,7 +170,7 @@
     <guid isPermaLink="true">http://tr-blank.github.io/post/00099</guid>
   <pubDate>
     
-  	Wed, 20 May 2015 16:35:36 GMT
+  	Mon, 01 Jun 2015 14:56:30 GMT
   </pubDate>
 	
 	    <category>校園</category>
@@ -173,7 +194,7 @@
     <guid isPermaLink="true">http://tr-blank.github.io/post/00098</guid>
   <pubDate>
     
-  	Wed, 20 May 2015 16:35:36 GMT
+  	Mon, 01 Jun 2015 14:56:30 GMT
   </pubDate>
 	
 	    <category>校園</category>
@@ -194,7 +215,7 @@
     <guid isPermaLink="true">http://tr-blank.github.io/post/00097</guid>
   <pubDate>
     
-  	Wed, 20 May 2015 16:35:36 GMT
+  	Mon, 01 Jun 2015 14:56:30 GMT
   </pubDate>
 	
 	    <category>校園</category>
@@ -215,7 +236,7 @@
     <guid isPermaLink="true">http://tr-blank.github.io/post/00096</guid>
   <pubDate>
     
-  	Wed, 20 May 2015 16:35:36 GMT
+  	Mon, 01 Jun 2015 14:56:30 GMT
   </pubDate>
 	
 	    <category>校園</category>
@@ -237,7 +258,7 @@
     <guid isPermaLink="true">http://tr-blank.github.io/post/00095</guid>
   <pubDate>
     
-  	Wed, 20 May 2015 16:35:36 GMT
+  	Mon, 01 Jun 2015 14:56:30 GMT
   </pubDate>
 	
 	    <category>校園</category>
@@ -259,7 +280,7 @@
     <guid isPermaLink="true">http://tr-blank.github.io/post/00094</guid>
   <pubDate>
     
-  	Wed, 20 May 2015 16:35:36 GMT
+  	Mon, 01 Jun 2015 14:56:30 GMT
   </pubDate>
 	
 	    <category>校園</category>
@@ -282,7 +303,7 @@
     <guid isPermaLink="true">http://tr-blank.github.io/post/00093</guid>
   <pubDate>
     
-  	Wed, 20 May 2015 16:35:36 GMT
+  	Mon, 01 Jun 2015 14:56:30 GMT
   </pubDate>
 	
 	    <category>校園</category>
@@ -305,7 +326,7 @@
     <guid isPermaLink="true">http://tr-blank.github.io/post/00092</guid>
   <pubDate>
     
-  	Wed, 20 May 2015 16:35:36 GMT
+  	Mon, 01 Jun 2015 14:56:30 GMT
   </pubDate>
 	
 	    <category>校園</category>
@@ -332,7 +353,7 @@
     <guid isPermaLink="true">http://tr-blank.github.io/post/00091</guid>
   <pubDate>
     
-  	Wed, 20 May 2015 16:35:36 GMT
+  	Mon, 01 Jun 2015 14:56:30 GMT
   </pubDate>
 	
 	    <category>校園</category>
@@ -353,7 +374,7 @@
     <guid isPermaLink="true">http://tr-blank.github.io/post/00090</guid>
   <pubDate>
     
-  	Wed, 20 May 2015 16:35:36 GMT
+  	Mon, 01 Jun 2015 14:56:30 GMT
   </pubDate>
 	
 	    <category>校園</category>
@@ -376,7 +397,7 @@
     <guid isPermaLink="true">http://tr-blank.github.io/post/00089</guid>
   <pubDate>
     
-  	Wed, 20 May 2015 16:35:36 GMT
+  	Mon, 01 Jun 2015 14:56:30 GMT
   </pubDate>
 	
 	    <category>校園</category>
@@ -399,7 +420,7 @@
     <guid isPermaLink="true">http://tr-blank.github.io/post/00088</guid>
   <pubDate>
     
-  	Wed, 20 May 2015 16:35:36 GMT
+  	Mon, 01 Jun 2015 14:56:30 GMT
   </pubDate>
 	
 	    <category>校園</category>
@@ -425,7 +446,7 @@
     <guid isPermaLink="true">http://tr-blank.github.io/post/00087</guid>
   <pubDate>
     
-  	Wed, 20 May 2015 16:35:36 GMT
+  	Mon, 01 Jun 2015 14:56:30 GMT
   </pubDate>
 	
 	    <category>校園</category>
@@ -449,7 +470,7 @@
     <guid isPermaLink="true">http://tr-blank.github.io/post/00086</guid>
   <pubDate>
     
-  	Wed, 20 May 2015 16:35:36 GMT
+  	Mon, 01 Jun 2015 14:56:30 GMT
   </pubDate>
 	
 	    <category>校園</category>
@@ -474,7 +495,7 @@
     <guid isPermaLink="true">http://tr-blank.github.io/post/00085</guid>
   <pubDate>
     
-  	Wed, 20 May 2015 16:35:36 GMT
+  	Mon, 01 Jun 2015 14:56:30 GMT
   </pubDate>
 	
 	    <category>校園</category>
@@ -495,7 +516,7 @@
     <guid isPermaLink="true">http://tr-blank.github.io/post/00084</guid>
   <pubDate>
     
-  	Wed, 20 May 2015 16:35:36 GMT
+  	Mon, 01 Jun 2015 14:56:30 GMT
   </pubDate>
 	
 	    <category>校園</category>
@@ -517,7 +538,7 @@
     <guid isPermaLink="true">http://tr-blank.github.io/post/00083</guid>
   <pubDate>
     
-  	Wed, 20 May 2015 16:35:36 GMT
+  	Mon, 01 Jun 2015 14:56:30 GMT
   </pubDate>
 	
 	    <category>校園</category>
@@ -540,7 +561,7 @@
     <guid isPermaLink="true">http://tr-blank.github.io/post/00082</guid>
   <pubDate>
     
-  	Wed, 20 May 2015 16:35:36 GMT
+  	Mon, 01 Jun 2015 14:56:30 GMT
   </pubDate>
 	
 	    <category>校園</category>
@@ -565,7 +586,7 @@
     <guid isPermaLink="true">http://tr-blank.github.io/post/00081</guid>
   <pubDate>
     
-  	Wed, 20 May 2015 16:35:36 GMT
+  	Mon, 01 Jun 2015 14:56:30 GMT
   </pubDate>
 	
 	    <category>校園</category>
@@ -591,7 +612,7 @@
     <guid isPermaLink="true">http://tr-blank.github.io/post/00077</guid>
   <pubDate>
     
-  	Wed, 20 May 2015 16:35:36 GMT
+  	Mon, 01 Jun 2015 14:56:30 GMT
   </pubDate>
 	
 	    <category>校園</category>
@@ -617,7 +638,7 @@
     <guid isPermaLink="true">http://tr-blank.github.io/post/00076</guid>
   <pubDate>
     
-  	Wed, 20 May 2015 16:35:36 GMT
+  	Mon, 01 Jun 2015 14:56:30 GMT
   </pubDate>
 	
 	    <category>校園</category>
@@ -642,7 +663,7 @@
     <guid isPermaLink="true">http://tr-blank.github.io/post/00075</guid>
   <pubDate>
     
-  	Wed, 20 May 2015 16:35:36 GMT
+  	Mon, 01 Jun 2015 14:56:30 GMT
   </pubDate>
 	
 	    <category>校園</category>
@@ -668,7 +689,7 @@
     <guid isPermaLink="true">http://tr-blank.github.io/post/00074</guid>
   <pubDate>
     
-  	Wed, 20 May 2015 16:35:36 GMT
+  	Mon, 01 Jun 2015 14:56:30 GMT
   </pubDate>
 	
 	    <category>校園</category>
@@ -697,7 +718,7 @@
     <guid isPermaLink="true">http://tr-blank.github.io/post/00073</guid>
   <pubDate>
     
-  	Wed, 20 May 2015 16:35:36 GMT
+  	Mon, 01 Jun 2015 14:56:30 GMT
   </pubDate>
 	
 	    <category>校園</category>
@@ -721,7 +742,7 @@
     <guid isPermaLink="true">http://tr-blank.github.io/post/00072</guid>
   <pubDate>
     
-  	Wed, 20 May 2015 16:35:36 GMT
+  	Mon, 01 Jun 2015 14:56:30 GMT
   </pubDate>
 	
 	    <category>校園</category>
@@ -744,7 +765,7 @@
     <guid isPermaLink="true">http://tr-blank.github.io/post/00071</guid>
   <pubDate>
     
-  	Wed, 20 May 2015 16:35:36 GMT
+  	Mon, 01 Jun 2015 14:56:30 GMT
   </pubDate>
 	
 	    <category>校園</category>
@@ -767,7 +788,7 @@
     <guid isPermaLink="true">http://tr-blank.github.io/post/00070</guid>
   <pubDate>
     
-  	Wed, 20 May 2015 16:35:36 GMT
+  	Mon, 01 Jun 2015 14:56:30 GMT
   </pubDate>
 	
 	    <category>校園</category>

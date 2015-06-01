@@ -20,122 +20,7 @@
 }
 /* 瀏覽器樣式統一reset
    ==========================================================================*/
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
-}
-ol,
-ul {
-  list-style: none;
-}
-blockquote,
-q {
-  quotes: none;
-}
-blockquote before,
-blockquote after,
-q before,
-q after {
-  content: '';
-  content: none;
-}
+@import "normalize.css";
 table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -151,21 +36,11 @@ body {
   font-size: 16px;
   height: 100vh;
   line-height: 1;
+  margin: 0;
 }
 a {
   display: inline-block;
   text-decoration: none;
-}
-ul {
-  font-size: 0;
-  letter-spacing: -4px;
-}
-li {
-  font-size: 14px;
-  display: inline-block;
-  letter-spacing: normal;
-  *display: inline;
-  *zoom: 1;
 }
 img {
   max-height: 100%;
@@ -186,17 +61,28 @@ textarea {
 /* ==========================================================================
    網站樣式
    ==========================================================================*/
+.cover {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 1999;
+  background: #f7f7f7;
+}
 body {
   background: #f0f0f0;
   color: #4b4b4b;
 }
-h1 {
+.header {
   padding-left: 20px;
+  margin: 0;
   margin-left: 100px;
   text-align: left;
   display: inline-block;
+  font-weight: normal;
 }
-h1 .title {
+.header .title {
   padding-top: 20px;
   position: relative;
   font-size: 22px;
@@ -259,6 +145,9 @@ h1 .title {
   border: 0px;
   padding: 8px;
   color: #999;
+  line-height: 1;
+  height: initial;
+  box-shadow: 0 0;
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
   border-radius: 3px;
@@ -305,12 +194,11 @@ h1 .title {
 .aside {
   position: fixed;
   text-align: center;
-  width: 100px;
   height: 100%;
   top: 0px;
   z-index: 10;
   vertical-align: top;
-  background: #90c3d2;
+  background: #00acc1;
 }
 nav h2 {
   display: none;
@@ -326,15 +214,11 @@ nav .close-menu {
 nav >a {
   display: block;
   padding: 10px 25px;
-  background: #90c3d2;
+  background: #00acc1;
   -webkit-transition: background 0.2s linear;
   -moz-transition: background 0.2s linear;
   -o-transition: background 0.2s linear;
   transition: background 0.2s linear;
-}
-nav >a >span {
-  font-size: 16px;
-  color: #f0f0f0;
 }
 nav >a:hover {
   background: #5ea2b6;
@@ -348,7 +232,7 @@ nav .now {
 }
 #gotop {
   position: absolute;
-  background: #5ea2b6;
+  background: #00838f;
   padding: 10px;
   bottom: 0px;
   width: 100%;
@@ -360,7 +244,7 @@ nav .now {
 }
 .tags-box {
   padding: 10px 25px;
-  background: #90c3d2;
+  background: #00acc1;
   -webkit-transition: background 0.2s linear;
   -moz-transition: background 0.2s linear;
   -o-transition: background 0.2s linear;
@@ -370,7 +254,7 @@ nav .now {
   padding-top: 5px;
 }
 .tags-box >span {
-  color: #f0f0f0;
+  color: rgba(255,255,255,0.8);
 }
 .tags-box .tags {
   overflow: hidden;
@@ -379,13 +263,13 @@ nav .now {
   -moz-transition: width 0.2s linear;
   -o-transition: width 0.2s linear;
   transition: width 0.2s linear;
-  background: #5ea2b6;
+  background: #0097a7;
   text-align: left;
   position: absolute;
   top: 0px;
   z-index: 20;
   height: 100%;
-  left: 100px;
+  left: 96px;
 }
 .tags-box .tags .box {
   margin: 10px 0;
@@ -402,7 +286,7 @@ nav .now {
   height: 30px;
   font-size: 14px;
   line-height: 25px;
-  background: #5ea2b6;
+  background: #0097a7;
   -webkit-transition: background 0.2s linear;
   -moz-transition: background 0.2s linear;
   -o-transition: background 0.2s linear;
@@ -411,7 +295,7 @@ nav .now {
   padding: 3px 10px;
 }
 .tags-box .tags a:hover {
-  background: #398196;
+  background: #00838f;
 }
 .tags-box .tags span {
   font-size: 10px;
@@ -421,7 +305,7 @@ nav .now {
   height: 10px;
 }
 .tags-box .tags .title {
-  background: #3c89a0;
+  background: #00838f;
   line-height: 25px;
   padding-left: 10px;
   color: #eaf9ff;
@@ -444,9 +328,11 @@ nav .now {
 }
 .main >h2 {
   color: #969696;
+  margin: 0;
   padding-left: 20px;
   font-size: 18px;
   text-align: left;
+  font-weight: normal;
 }
 .main .inner {
   max-width: 1000px;
@@ -460,7 +346,10 @@ nav .now {
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   border-radius: 5px;
-  padding: 20px;
+  padding: 10px 30px;
+}
+.archives li {
+  line-height: 30px;
 }
 .archives h3 {
   font-size: 30px;
@@ -520,7 +409,7 @@ article .tags a:hover {
   transition: color 0.2s linear;
 }
 .word a:hover {
-  color: #90c3d2;
+  color: #00acc1;
 }
 .word .em {
   max-width: 853px;
@@ -576,10 +465,10 @@ article .tags a:hover {
   width: 40px;
 }
 .other .left-but {
-  left: -80px;
+  left: -90px;
 }
 .other .right-but {
-  right: -80px;
+  right: -90px;
 }
 .other .left-page {
   display: none;
@@ -662,7 +551,7 @@ article .tags a:hover {
   transition: color 0.2s linear;
 }
 .list .pic a:hover {
-  color: #90c3d2;
+  color: #00acc1;
 }
 .list img {
   width: 100%;
@@ -687,6 +576,7 @@ article .tags a:hover {
   -moz-transition: color 0.2s linear;
   -o-transition: color 0.2s linear;
   transition: color 0.2s linear;
+  margin: 0;
   margin-bottom: 5px;
 }
 .list .box:hover h3 {
@@ -747,6 +637,32 @@ section >footer {
   text-align: right;
   background: #fff;
 }
+.ui.vertical.menu {
+  background: #00acc1;
+  width: 96px;
+}
+.ui.vertical.menu .item {
+  position: initial;
+}
+.ui.menu {
+  box-shadow: 0 0px;
+}
+.ui.vertical.menu .item {
+  color: rgba(255,255,255,0.8);
+}
+.ui.vertical.menu .item:hover {
+  color: rgba(255,255,255,0.8);
+  background: #00bcd4;
+}
+a:hover,
+a:focus {
+  box-shadow: 0 0px;
+}
+.ui.vertical.menu .item>i.icon {
+  width: 100%;
+  font-size: 1.8em !important;
+  margin: 0 auto 0.3em !important;
+}
 /* ==========================================================================
    RWD
    ==========================================================================*/
@@ -766,7 +682,7 @@ section >footer {
   }
 }
 @media screen and (max-width: 980px) {
-  h1 {
+  .header {
     margin-top: 55px;
   }
   .follow {
@@ -792,7 +708,7 @@ section >footer {
   nav .close-menu {
     display: block;
   }
-  h1 {
+  .header {
     text-align: center;
     margin-left: 0px;
   }
