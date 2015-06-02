@@ -457,6 +457,24 @@ nav h2 {
 .contact .follow a:hover {
   color: #7a7a7a;
 }
+.contact ul {
+  text-align: left;
+  list-style-type: none;
+  line-height: 25px;
+  display: inline-block;
+  margin: 50px 0;
+}
+.contact li {
+  position: relative;
+  font-size: 1.1em;
+  display: inline-block;
+  margin: 0px 50px;
+}
+.contact li i {
+  position: absolute;
+  left: -30px;
+  top: 4px;
+}
 .footer {
   padding: 20px 0;
   font-size: 10px;
