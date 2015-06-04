@@ -27,6 +27,8 @@ $(function() {
         .sidebar('toggle');
   });
 
+  $(".pusher").append($(".onepage-pagination"));
+
   $('.degree1').progress({
     percent: 25
   });

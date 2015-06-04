@@ -12,6 +12,11 @@ $(function() {
       $(".tags-box .tags .box").removeAttr('style');
     });
 
+    if($(".tags-box .tags").length!=0){
+      console.log("message");
+      $('.tags-box .tags .box').jScrollPane();
+    }
+
     $("#gotop").click(function(){
         $("html,body").animate({
             scrollTop:0
