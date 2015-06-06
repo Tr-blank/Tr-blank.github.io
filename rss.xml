@@ -17,7 +17,7 @@
   <pubDate>Wed, 20 May 2015 12:00:00 GMT</pubDate>
   <lastBuildDate>
   
-  Sat, 06 Jun 2015 15:55:50 GMT
+  Sat, 06 Jun 2015 18:34:58 GMT
   </lastBuildDate>
   <category>Web development</category>
   <category>BLOG</category>
@@ -47,6 +47,56 @@
   </item>
 
   <item>
+    <title>使用nodemon實現檔案存檔後自動重啓node</title>
+    <link>http://tr-blank.github.io/menu/blog/00147</link>
+    <description><![CDATA[
+      <p>每次修改node專案裡的後端js檔都需要手動重啟node來觀看執行結果，剛開始踏入Node世界就覺得這一點真不方便，以前用的PHP+apache就方便多了。但因為只是麻煩了點，當時比較想快點做出基本的網站功能，就直接去研究比較重要的網站功能實現。</p>
+<p>現在急迫的功能都有雛形，差不多該回頭解決一下這點小麻煩，不然每次修改後都要手動關閉node.exe再執行app.js開啟伺服器，真的挺笨的。</p>
+<p>於是google了一下查到了nodemon(相同功能的工具還有supervisor)。</p>
+<hr>
+<p>透過npm指令全局安裝nodemon:</p>
+<pre><code>npm install -g nodemon
+</code></pre><p>每次啟動伺服器的node指令換成nodemon:</p>
+<pre><code>nodemon app.js
+</code></pre><p>就可以讓node有自動重啟的功能了。</p>
+<hr>
+<p>但其實我一直覺得打指令很麻煩，所以都是用Sublime text 3去build app.js來開啟伺服器。確認自動重啟功能沒問題後，下一步就是修改Sublime text 3的build設定了。</p>
+<p>打開Sublime text 3上方的Preferences選項，選擇第一個項目Browse Packages...，從開啟的資料夾裡點擊進Nodejs套件資料夾，找到Nodejs.sublime-build檔案拉進Sublime text 3來修改:</p>
+<pre><code class="lang-JavaScript">{
+  &quot;cmd&quot;: [&quot;node&quot;, &quot;$file&quot;],
+  &quot;file_regex&quot;: &quot;^[ ]*File \&quot;(...*?)\&quot;, line ([0-9]*)&quot;,
+  &quot;selector&quot;: &quot;source.js&quot;,
+  &quot;shell&quot;:true,
+  &quot;encoding&quot;: &quot;utf8&quot;,
+  &quot;windows&quot;:
+    {
+        &quot;cmd&quot;: [&quot;nodemon&quot;, &quot;$file&quot;],
+    },
+  &quot;linux&quot;:
+    {
+        &quot;cmd&quot;: [&quot;killall node; node&quot;, &quot;$file&quot;]
+    }
+}
+</code></pre>
+<p>存檔後就可以用Sublime text 3來執行nodemon app.js指令來開啟伺服器了。</p>
+<hr>
+<p>相關資料:</p>
+<p><a href="http://nodemon.io/">nodemon官網</a></p>
+<p><a href="https://github.com/remy/nodemon">nodemon github</a></p>
+<p><a href="http://bubkoo.com/2014/12/02/use-nodemon-with-node-applications/">在 Express 开发中使用 nodemon | bubkoo</a></p>
+
+    	]]>
+    </description>
+    <guid isPermaLink="true">http://tr-blank.github.io/menu/blog/00147</guid>
+  <pubDate>
+    Sat, 06 Jun 2015 17:46:57 GMT
+  </pubDate>
+	
+	    <category>Node.js</category>
+	
+  </item>
+
+  <item>
     <title>提亞個人網站更新紀錄</title>
     <link>http://tr-blank.github.io/menu/blog/00135</link>
     <description><![CDATA[
@@ -55,6 +105,7 @@
 <hr>
 <h4 id="-">更新日期</h4>
 <ul>
+<li>6/6 rss格式修改、使用FeedPress</li>
 <li>6/4 後台畫面調整、增加備忘錄功能,資料庫及rss日期設定修正完成</li>
 <li>6/3 替node伺服器增加了偵測檔案修改存檔後自動重啟功能</li>
 <li>6/2 網站路徑修改、文章圖片連結移除、履歷頁面更新</li>
@@ -62,11 +113,15 @@
 </ul>
 <h4 id="-">預計新增</h4>
 <ul>
+<li>文章代碼部分高亮效果</li>
+<li>發文後各社群網站自動發佈更新訊息功能</li>
+<li>加上社群分享小按鈕</li>
 <li>子標籤分類</li>
 <li>研究標籤搜尋功能*</li>
 </ul>
 <h4 id="-">預計修改</h4>
 <ul>
+<li>後台編輯畫面調整、加上markdown語法高亮效果</li>
 <li>首頁視差滾動效果修改</li>
 <li>提升網站RWD完整度</li>
 <li>瀑布流排版修改</li>
@@ -75,7 +130,7 @@
 <h5 id="seo">SEO</h5>
 <ul>
 <li>遞交網站到各搜尋引擎</li>
-<li>rss feed製作及語法</li>
+<li>rss feed製作及語法及FeedPress</li>
 </ul>
 <h5 id="-">前端</h5>
 <ul>
@@ -123,7 +178,7 @@
     </description>
     <guid isPermaLink="true">http://tr-blank.github.io/menu/blog/00135</guid>
   <pubDate>
-    Thu, 04 Jun 2015 15:56:39 GMT
+    Sat, 06 Jun 2015 17:58:13 GMT
   </pubDate>
 	
 	    <category>彙總帖</category>
