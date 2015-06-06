@@ -17,7 +17,7 @@
   <pubDate>Wed, 20 May 2015 12:00:00 GMT</pubDate>
   <lastBuildDate>
   
-  Sat, 06 Jun 2015 19:29:01 GMT
+  Sat, 06 Jun 2015 19:31:11 GMT
   </lastBuildDate>
   <category>Web development</category>
   <category>BLOG</category>
@@ -102,7 +102,9 @@
     <description><![CDATA[
       <h4 id="-">本日更新</h4>
 <ul>
-<li>rss格式修改、使用FeedPress、發文後發送更新訊息到FB粉絲團,噗浪,個人FB,Twitter</li>
+<li>rss格式修改</li>
+<li>使用FeedPress</li>
+<li>發文後發送更新消息到FB粉絲團、噗浪、個人FB、Twitter</li>
 </ul>
 <hr>
 <p>一個前端人員摔進後端坑的哀號史，將初次使用Node.js來開發網站的跌跌撞撞過程集中成一篇清單的彙總帖。</p>
@@ -182,7 +184,7 @@
     </description>
     <guid isPermaLink="true">http://tr-blank.github.io/menu/blog/00135</guid>
   <pubDate>
-    Sat, 06 Jun 2015 19:28:58 GMT
+    Sat, 06 Jun 2015 19:31:09 GMT
   </pubDate>
 	
 	    <category>彙總帖</category>
