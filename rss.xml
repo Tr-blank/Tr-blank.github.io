@@ -17,7 +17,7 @@
   <pubDate>Wed, 20 May 2015 12:00:00 GMT</pubDate>
   <lastBuildDate>
   
-  Sat, 06 Jun 2015 18:34:58 GMT
+  Sat, 06 Jun 2015 19:29:01 GMT
   </lastBuildDate>
   <category>Web development</category>
   <category>BLOG</category>
@@ -100,12 +100,16 @@
     <title>提亞個人網站更新紀錄</title>
     <link>http://tr-blank.github.io/menu/blog/00135</link>
     <description><![CDATA[
-      <p>一個前端人員摔進後端坑的哀號史，將初次使用Node.js來開發網站的跌跌撞撞過程集中成一篇清單的彙總帖。</p>
-<p>目前仍在坑裡掙扎中詳細記錄有待日後補完，在此先記錄下開發<strong>提亞─Tiya&#39;s Personal Website</strong>時因各種需求而遇到一堆疑難雜症的救濟關鍵字，以防之後健忘走回頭路。</p>
-<hr>
-<h4 id="-">更新日期</h4>
+      <h4 id="-">本日更新</h4>
 <ul>
-<li>6/6 rss格式修改、使用FeedPress</li>
+<li>rss格式修改、使用FeedPress、發文後發送更新訊息到FB粉絲團,噗浪,個人FB,Twitter</li>
+</ul>
+<hr>
+<p>一個前端人員摔進後端坑的哀號史，將初次使用Node.js來開發網站的跌跌撞撞過程集中成一篇清單的彙總帖。</p>
+<p>目前仍在坑裡掙扎中詳細記錄有待日後補完，在此先記錄下開發<strong>提亞─Tiya&#39;s Personal Website</strong>時因各種需求而遇到一堆疑難雜症的救濟關鍵字，以防之後健忘走回頭路。</p>
+<h4 id="-">更新紀錄</h4>
+<ul>
+<li>6/6 rss格式修改、使用FeedPress、發文後發送更新訊息到FB粉絲團,噗浪,個人FB,Twitter</li>
 <li>6/4 後台畫面調整、增加備忘錄功能,資料庫及rss日期設定修正完成</li>
 <li>6/3 替node伺服器增加了偵測檔案修改存檔後自動重啟功能</li>
 <li>6/2 網站路徑修改、文章圖片連結移除、履歷頁面更新</li>
@@ -178,7 +182,7 @@
     </description>
     <guid isPermaLink="true">http://tr-blank.github.io/menu/blog/00135</guid>
   <pubDate>
-    Sat, 06 Jun 2015 17:58:13 GMT
+    Sat, 06 Jun 2015 19:28:58 GMT
   </pubDate>
 	
 	    <category>彙總帖</category>
