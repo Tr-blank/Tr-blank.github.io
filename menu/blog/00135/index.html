@@ -362,14 +362,14 @@
             </div>
             <div class='word'><h4 id="-">本日更新</h4>
 <ul>
-<li>文章頁面加上社群按鈕、</li>
+<li>文章頁面加上社群按鈕、google翻譯下拉式選單</li>
 </ul>
 <hr>
 <p>一個前端人員摔進後端坑的哀號史，將初次使用Node.js來開發網站的跌跌撞撞過程集中成一篇清單的彙總帖。</p>
 <p>目前仍在坑裡掙扎中詳細記錄有待日後補完，在此先記錄下開發<strong>提亞─Tiya&#39;s Personal Website</strong>時因各種需求而遇到一堆疑難雜症的救濟關鍵字，以防之後健忘走回頭路。</p>
 <h4 id="-">更新紀錄</h4>
 <ul>
-<li>6/7 文章頁面加上社群分享小按鈕</li>
+<li>6/7 文章頁面加上社群按鈕、google翻譯下拉式選單</li>
 <li>6/6 rss格式修改、使用FeedPress、發文後發送更新訊息到FB粉絲團,噗浪,個人FB,Twitter</li>
 <li>6/4 後台畫面調整、增加備忘錄功能,資料庫及rss日期設定修正完成</li>
 <li>6/3 替node伺服器增加了偵測檔案修改存檔後自動重啟功能</li>
@@ -651,10 +651,20 @@
     </form>
   </aside>
   <footer class="footer">
+   <!--  google翻譯-->
+    <div id="google_translate_element"></div>
     <div class="Copyright">Copyright © 2015 By <a href="/">提亞</a> All rights reserved</div>
   </footer>
   <script src="/javascripts/view.js"></script>
- <!--  Go to www.addthis.com/dashboard to customize your tools -->
+   <!--  google翻譯-->
+  <script type="text/javascript">
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({pageLanguage: 'zh-TW', layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL, multilanguagePage: true, gaTrack: true, gaId: 'UA-62416681-1'}, 'google_translate_element');
+  }
+  </script>
+  <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+  <!--  Go to www.addthis.com/dashboard to customize your tools -->
   <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5573fabd0ec75226" async="async"></script>
 
   <script type="text/javascript">
