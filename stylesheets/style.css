@@ -37,6 +37,7 @@ body {
   height: 100vh;
   line-height: 1;
   margin: 0;
+  overflow-x: hidden;
 }
 a {
   display: inline-block;
@@ -355,7 +356,17 @@ nav .now {
   font-size: 30px;
   text-align: center;
   font-weight: normal;
-  margin-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+  margin: 0;
+  padding: 20px;
+  position: relative;
+}
+.archives .like {
+  margin-top: 10px;
+  text-align: right;
+}
+.archives .like .addthis_native_toolbox {
+  display: inline-block;
 }
 article {
   padding-bottom: 10px;
@@ -364,6 +375,9 @@ article .data {
   color: #a0a0a0;
   font-size: 14px;
   padding-left: 10px;
+  position: absolute;
+  right: 35px;
+  bottom: 3px;
 }
 article .goto-icon {
   width: 30px;
@@ -376,7 +390,7 @@ article .tags-icon {
   height: 10px;
 }
 article .tags {
-  margin: 10px 0;
+  margin: 25px 0;
 }
 article .tags a {
   color: #727170;
@@ -434,7 +448,11 @@ article .tags a:hover {
 .share {
   text-align: center;
 }
-.share .bdsharebuttonbox {
+.share >span {
+  font-size: 0.85em;
+}
+.share .bdsharebuttonbox,
+.share .pc {
   display: inline-block;
   vertical-align: middle;
 }
@@ -448,7 +466,6 @@ article .tags a:hover {
   -webkit-border-radius: 3px;
   border-radius: 3px;
   padding: 10px;
-  margin-top: 20px;
   background: #ededed;
   position: relative;
 }
@@ -499,7 +516,6 @@ article .tags a:hover {
 }
 .comments {
   font-size: 24px;
-  padding: 50px 0 15px 0;
 }
 .list {
   text-align: center;

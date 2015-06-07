@@ -17,7 +17,7 @@
   <pubDate>Wed, 20 May 2015 12:00:00 GMT</pubDate>
   <lastBuildDate>
   
-  Sun, 07 Jun 2015 13:18:32 GMT
+  Sun, 07 Jun 2015 17:59:13 GMT
   </lastBuildDate>
   <category>Web development</category>
   <category>BLOG</category>
@@ -102,7 +102,7 @@
     <description><![CDATA[
       <h4 id="-">本日更新</h4>
 <ul>
-<li>文章頁面加上社群分享小按鈕</li>
+<li>文章頁面加上社群按鈕、</li>
 </ul>
 <hr>
 <p>一個前端人員摔進後端坑的哀號史，將初次使用Node.js來開發網站的跌跌撞撞過程集中成一篇清單的彙總帖。</p>
@@ -120,7 +120,6 @@
 <ul>
 <li>網站語言選項，透過google翻譯</li>
 <li>文章代碼部分高亮效果</li>
-<li>發文後各社群網站自動發佈更新訊息功能</li>
 <li>子標籤分類</li>
 <li>研究標籤搜尋功能*</li>
 </ul>
@@ -167,6 +166,7 @@
 </ul>
 <h5 id="-">延伸項目</h5>
 <ul>
+<li>社群相關</li>
 <li>js,sql時間格式操作</li>
 <li>Browserify、Webpack</li>
 <li>nodemon讓node自動重啟</li>
@@ -183,7 +183,7 @@
     </description>
     <guid isPermaLink="true">http://tr-blank.github.io/menu/blog/00135</guid>
   <pubDate>
-    Sun, 07 Jun 2015 12:59:36 GMT
+    Sun, 07 Jun 2015 17:59:06 GMT
   </pubDate>
 	
 	    <category>彙總帖</category>
