@@ -431,6 +431,18 @@ article .tags a:hover {
   width: 100%;
   height: 100%;
 }
+.share {
+  text-align: center;
+}
+.share .bdsharebuttonbox {
+  display: inline-block;
+  vertical-align: middle;
+}
+.share .addthis_sharing_toolbox {
+  display: inline-block;
+  vertical-align: middle;
+  padding-top: 2px;
+}
 .other {
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;

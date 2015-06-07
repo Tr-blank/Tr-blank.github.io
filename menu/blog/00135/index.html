@@ -359,15 +359,14 @@
             <h3>提亞個人網站更新紀錄<span class='data'>Sat May 23 2015</span></h3>
             <div class='word'><h4 id="-">本日更新</h4>
 <ul>
-<li>rss格式修改</li>
-<li>使用FeedPress</li>
-<li>發文後發送更新消息到FB粉絲團、噗浪、個人FB、Twitter</li>
+<li>文章頁面加上社群分享小按鈕</li>
 </ul>
 <hr>
 <p>一個前端人員摔進後端坑的哀號史，將初次使用Node.js來開發網站的跌跌撞撞過程集中成一篇清單的彙總帖。</p>
 <p>目前仍在坑裡掙扎中詳細記錄有待日後補完，在此先記錄下開發<strong>提亞─Tiya&#39;s Personal Website</strong>時因各種需求而遇到一堆疑難雜症的救濟關鍵字，以防之後健忘走回頭路。</p>
 <h4 id="-">更新紀錄</h4>
 <ul>
+<li>6/7 文章頁面加上社群分享小按鈕</li>
 <li>6/6 rss格式修改、使用FeedPress、發文後發送更新訊息到FB粉絲團,噗浪,個人FB,Twitter</li>
 <li>6/4 後台畫面調整、增加備忘錄功能,資料庫及rss日期設定修正完成</li>
 <li>6/3 替node伺服器增加了偵測檔案修改存檔後自動重啟功能</li>
@@ -379,7 +378,6 @@
 <li>網站語言選項，透過google翻譯</li>
 <li>文章代碼部分高亮效果</li>
 <li>發文後各社群網站自動發佈更新訊息功能</li>
-<li>加上社群分享小按鈕</li>
 <li>子標籤分類</li>
 <li>研究標籤搜尋功能*</li>
 </ul>
@@ -456,14 +454,24 @@
           
             </footer>
         </article>
-        <!-- Go to www.addthis.com/dashboard to customize your tools -->
-        <div class="addthis_sharing_toolbox"><spen>分享到</spen></div>
-<span>
-<script type="text/javascript" src="//media.line.me/js/line-button.js?v=20140411" ></script>
-<script type="text/javascript">
-new media_line_me.LineButton({"pc":false,"lang":"zh-hant","type":"b"});
-</script>
-</span>
+        <div class="share">
+          <spen>分享到</spen>
+          <span>
+          <script type="text/javascript" src="//media.line.me/js/line-button.js?v=20140411" ></script>
+          <script type="text/javascript">
+          new media_line_me.LineButton({"pc":false,"lang":"zh-hant","type":"d"});
+          </script>
+          </span>
+          <div class="bdsharebuttonbox">
+            <a href="#" class="bds_more" data-cmd="more"></a>
+            <a title="分享到微信" href="#" class="bds_weixin" data-cmd="weixin"></a>
+            <a title="分享到QQ空间" href="#" class="bds_qzone" data-cmd="qzone"></a>
+            <a title="分享到腾讯微博" href="#" class="bds_tqq" data-cmd="tqq"></a>
+          </div>
+          <script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"32"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+          <!-- Go to www.addthis.com/dashboard to customize your tools -->
+          <div class="addthis_sharing_toolbox"></div>
+        </div>
         <div class="other">
           
           <a href="/menu/blog/00147" class="page-but left-but">
