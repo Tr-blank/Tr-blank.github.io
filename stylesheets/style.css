@@ -352,15 +352,6 @@ nav .now {
 .archives li {
   line-height: 25px;
 }
-.archives h3 {
-  font-size: 30px;
-  text-align: center;
-  font-weight: normal;
-  border-bottom: 1px solid #ddd;
-  margin: 0;
-  padding: 20px;
-  position: relative;
-}
 .archives .like {
   margin-top: 10px;
   text-align: right;
@@ -370,6 +361,15 @@ nav .now {
 }
 article {
   padding-bottom: 10px;
+}
+article >h3 {
+  font-size: 30px;
+  text-align: center;
+  font-weight: normal;
+  border-bottom: 1px solid #ddd;
+  margin: 0;
+  padding: 20px;
+  position: relative;
 }
 article .data {
   color: #a0a0a0;
@@ -413,7 +413,6 @@ article .tags a:hover {
   line-height: 30px;
 }
 .word a {
-  display: block;
   color: #868686;
   font-weight: bold;
   text-decoration: underline;
@@ -565,6 +564,13 @@ article .tags a:hover {
   position: relative;
   margin-bottom: 10px;
 }
+.list .pic h1,
+.list .pic h2,
+.list .pic h3,
+.list .pic h4,
+.list .pic h5 {
+  font-size: 1em;
+}
 .list .pic p {
   margin-bottom: 10px;
   line-height: 30px;
@@ -591,10 +597,7 @@ article .tags a:hover {
 .list .title {
   display: block;
 }
-.list .title:hover h3 {
-  text-decoration: underline;
-}
-.list h3 {
+.list .title h3 {
   font-weight: bolder;
   display: inline-block;
   font-size: 20px;
@@ -607,7 +610,10 @@ article .tags a:hover {
   margin: 0;
   margin-bottom: 5px;
 }
-.list .box:hover h3 {
+.list .title:hover h3 {
+  text-decoration: underline;
+}
+.list .box:hover .title h3 {
   color: #ec8686;
 }
 .list .data {
