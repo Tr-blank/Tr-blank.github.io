@@ -752,7 +752,7 @@ a:focus {
   .header {
     text-align: center;
     margin-left: 0px;
-    padding-left: 10px;
+    padding: 0 10px;
   }
   .follow {
     text-align: center;
