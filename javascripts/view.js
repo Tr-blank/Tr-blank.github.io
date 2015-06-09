@@ -14,7 +14,7 @@ $(function() {
 
     if($(".tags-box .tags").length!=0){
       console.log("message");
-      $('.tags-box .tags .box').jScrollPane();
+      // $('.tags-box .tags .box').jScrollPane();
     }
 
     $("#gotop").click(function(){

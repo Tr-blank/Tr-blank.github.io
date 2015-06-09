@@ -59,6 +59,9 @@ textarea {
 .show {
   display: block;
 }
+.bd_weixin_popup {
+  box-sizing: initial;
+}
 /* ==========================================================================
    網站樣式
    ==========================================================================*/
@@ -446,6 +449,7 @@ article .tags a:hover {
 }
 .share {
   text-align: center;
+  position: relative;
 }
 .share >span {
   font-size: 0.85em;
@@ -739,12 +743,16 @@ a:focus {
 /* 電腦螢幕<788px */
 /* 電腦螢幕<720px */
 @media screen and (max-width: 720px) {
+  .share .pc {
+    display: none;
+  }
   nav .close-menu {
     display: block;
   }
   .header {
     text-align: center;
     margin-left: 0px;
+    padding-left: 10px;
   }
   .follow {
     text-align: center;
@@ -768,11 +776,23 @@ a:focus {
   .follow form .x-search {
     display: inline-block;
   }
+  .archives {
+    padding: 10px;
+  }
+  article >h3 {
+    padding: 20px 0px;
+  }
   .aside {
     left: -100px;
   }
   .main {
     margin-left: 0px;
+  }
+  .main .inner {
+    margin: 0;
+  }
+  .main h2 {
+    display: none;
   }
   .list {
     margin: 15px 0px;
