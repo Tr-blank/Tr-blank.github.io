@@ -37,7 +37,7 @@ body {
   height: 100vh;
   line-height: 1;
   margin: 0;
-  overflow-x: hidden;
+  position: relative;
 }
 a {
   display: inline-block;
@@ -358,6 +358,7 @@ nav .now {
 .archives .like {
   margin-top: 10px;
   text-align: right;
+  overflow-x: hidden;
 }
 .archives .like .addthis_native_toolbox {
   display: inline-block;
