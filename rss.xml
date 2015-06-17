@@ -17,7 +17,7 @@
   <pubDate>Wed, 20 May 2015 12:00:00 GMT</pubDate>
   <lastBuildDate>
   
-  Tue, 09 Jun 2015 14:39:55 GMT
+  Wed, 17 Jun 2015 09:53:28 GMT
   </lastBuildDate>
   <category>Web development</category>
   <category>BLOG</category>
@@ -201,7 +201,7 @@
     <description><![CDATA[
       <p>一個前端人員摔進後端坑的哀號史，將初次使用Node.js來開發網站的跌跌撞撞過程集中成一篇清單的彙總帖。</p>
 <p>目前仍在坑裡掙扎中詳細記錄有待日後補完，在此先記錄下開發<strong>提亞─Tiya&#39;s Personal Website</strong>時因各種需求而遇到一堆疑難雜症的救濟關鍵字，以防之後健忘走回頭路。</p>
-<h3 id="-">本日更新</h3>
+<h3 id="6-7-">6/7更新</h3>
 <ul>
 <li>文章頁面加上社群按鈕、google翻譯下拉式選單</li>
 </ul>
@@ -282,7 +282,7 @@
     </description>
     <guid isPermaLink="true">http://tr-blank.github.io/menu/blog/00135</guid>
   <pubDate>
-    Mon, 08 Jun 2015 20:09:40 GMT
+    Tue, 09 Jun 2015 16:17:20 GMT
   </pubDate>
 	
 	    <category>彙總帖</category>

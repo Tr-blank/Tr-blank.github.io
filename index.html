@@ -13,27 +13,26 @@
     <meta name="keywords" content="作品集,提亞,Tia,Personal Website,new-tab,部落格,網路資源,資訊技術,設計,插圖,網頁,前端">
     <meta name="author" content="提亞">
     <meta name="copyright" content="提亞版權所有">
-  <link rel="stylesheet" href="/plugins/onepage-scroll-master/onepage-scroll.css" />
 
   <!-- <link rel="stylesheet" href="/plugins/Semantic-UI-1.12.3/dist/semantic.css" /> -->
-  <link rel="stylesheet" href="/plugins/Semantic-UI-1.12.3/dist/components/sidebar.min.css" />
-  <link rel="stylesheet" href="/plugins/Semantic-UI-1.12.3/dist/components/menu.min.css" />
-  <link rel="stylesheet" href="/plugins/Semantic-UI-1.12.3/dist/components/progress.min.css" />
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.12.3/components/sidebar.min.css" /> -->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.12.3/components/menu.min.css" /> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.12.3/components/progress.min.css" />
 
   <link rel="stylesheet" href="/plugins/IcoMoon/demo-files/demo.css">
+  <!--  -->
   <link rel="stylesheet" href="/stylesheets/web-index.css" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 
   <!-- // <script src="/plugins/Semantic-UI-1.12.3/dist/semantic.js"></script> -->
-  <script src="/plugins/Semantic-UI-1.12.3/dist/components/sidebar.min.js"></script>
-  <script src="/plugins/Semantic-UI-1.12.3/dist/components/progress.min.js"></script>
+  <!-- // <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.12.3/components/sidebar.min.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.12.3/components/progress.min.js"></script>
 
-  <script src="/plugins/onepage-scroll-master/jquery.onepage-scroll.js"></script>
-  <!-- PACE 載入條套件 -->
+  <!-- PACE 載入條套件-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/pace.min.js"></script>
-  <!-- PACE 載入條樣式 -->
+  <!-- PACE 載入條樣式-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/themes/silver/pace-theme-loading-bar.css" />
-  <!-- 自動增加css3前缀 -->
+   <!-- 自動增加css3前缀 -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
   <!-- 讓ie8以下支援html5語意標籤 -->
   <!--[if lt IE 9]>
@@ -44,11 +43,18 @@
   <script src="http://cdnjs.cloudflare.com/ajax/libs/selectivizr/1.0.2/selectivizr-min.js"></script>
   <![endif]-->
   </head>
-<body class="pushable">
-  <h1>Tiya</h1>
-  <div class="cover"></div>
-  <nav class="ui demo left vertical blue labeled icon sidebar menu ">
-      <h2>首頁、作品集、部落格、收藏區、歸檔</h2>
+<body>
+  <header>
+    <div id="nav_t" class="nav-li now"><h1>Tiya</h1></div>
+   
+    <div id="nav_s" class="nav-li">Skills</div>
+    <div id="nav_w" class="nav-li">Works</div>
+ <!--    <div id="nav_c" class="nav-li">Contact</div> -->
+  </header>
+  <div class="aside">
+      <div class="ui teal launch right attached fixed button">
+        <i class="icon icon-menu"></i>
+      </div>
       <a href="/" class="item">
         <i class="icon icon-home"></i>
         首頁
@@ -69,18 +75,9 @@
         <i class="icon icon-files-empty"></i>
         歸檔
       </a>
-  </nav>
-  <div class="pusher">
-  <div class="logo">Tiya</div>
-<!--     <div class="sidebar-button"> -->
-      <div class="ui teal launch right attached fixed button">
-        <i class="icon icon-menu"></i>
-      </div>
-    <!-- </div> -->
-    <div class="main">
-      <section class="page tiya">
-        <div class="wrapper">
-
+  </div>
+    <section id="tiya">
+      <div class=" inner wrapper">
           <h1>
             <a class="title" href="/">
             提亞
@@ -92,49 +89,13 @@
           <p>我喜歡追隨日新月異的資訊技術，用更高效、更完善、更美觀的方式滿足人們的需求。在電腦休息時，我會背著包、拿著筆，描繪下旅途的足跡。</p>
           <p>設計與程式伴隨著我的生活，記錄在<a href="/">提亞 ─ Tiya's Personal Website</a>。</p>
           
-        </div>
-      </section>
-      
-<!--       <section class="page skill">
-        <div class="wrapper">
-          技能Skills
-          <h2>能力</h2>
-          <div class="inner">
-              <ul>
-                <li>
-                  <span>SEO</span>
-                  <div class="ui active progress" >
-                    <div class="bar"><a href="/menu/blog"><i class="icon icon-new-tab"></i></a>RWD,W3C,HTML5</div>
-                  </div>
-                </li>
-                <li><span>RWD</span>
-                  <div class="ui active progress" >
-                    <div class="bar"><a href="/menu/blog"><i class="icon icon-new-tab"></i></a>google</div>
-                  </div>
-                </li>
-                <li><span>跨瀏覽器</span>
-                  <div class="ui active progress" >
-                    <div class="bar"><a href="/menu/blog"><i class="icon icon-new-tab"></i></a>reset,normalize.css,html5shiv-printshiv,selectivizr,prefixfree</div>
-                  </div>
-                </li>
-                <li><span>效能測試</span>
-                  <div class="ui active progress" >
-                    <div class="bar"><a href="/menu/blog"><i class="icon icon-new-tab"></i></a>google</div>
-                  </div>
-                </li>
-                <li><span>ajax</span>
-                  <div class="ui active progress" >
-                    <div class="bar"><a href="/menu/blog"><i class="icon icon-new-tab"></i></a>jquery</div>
-                  </div>
-                </li>
-              </ul>
-          </div>
-        </div>
-      </section> -->
-      <section class="page skill">
-        <div class="wrapper">
+      </div>
+    </section>
+
+      <section id="skills">
+        <div class="inner wrapper">
           <!-- 技能Skills -->
-          <h2>前端技術</h2>
+          <h2>技能</h2>
           <div class="inner">
             <div class="box">
               <h3>軟體工具</h3>
@@ -159,7 +120,17 @@
                     <div class="bar"><a href="/menu/blog"><i class="icon icon-new-tab"></i></a></div>
                   </div>
                 </li>
-                <li><span>Bower</span>
+                <li><span>Keystone</span>
+                  <div class="ui green active progress degree2" >
+                    <div class="bar"><a href="/menu/blog"><i class="icon icon-new-tab"></i></a></div>
+                  </div>
+                </li>
+                <li><span>Git</span>
+                  <div class="ui green active progress degree2" >
+                    <div class="bar"><a href="/menu/blog"><i class="icon icon-new-tab"></i></a></div>
+                  </div>
+                </li>
+                <li><span>NPM</span>
                   <div class="ui green active progress degree1" >
                     <div class="bar"><a href="/menu/blog"><i class="icon icon-new-tab"></i></a></div>
                   </div>
@@ -169,7 +140,7 @@
                     <div class="bar"><a href="/menu/blog"><i class="icon icon-new-tab"></i></a></div>
                   </div>
                 </li>
-                <li><span>Browserify</span>
+                <li><span>Webpack</span>
                   <div class="ui green active progress degree1" >
                     <div class="bar"><a href="/menu/blog"><i class="icon icon-new-tab"></i></a></div>
                   </div>
@@ -194,14 +165,34 @@
                     <div class="bar"><a href="/menu/blog"><i class="icon icon-new-tab"></i></a></div>
                   </div>
                 </li>
-                <li><span>SCSS</span>
+                <li><span>SASS</span>
                   <div class="ui orange active progress degree1" >
                     <div class="bar"><a href="/menu/blog"><i class="icon icon-new-tab"></i></a></div>
                   </div>
                 </li>
               </ul>
-            </div>
-            <div class="box">
+             <h3>CSS 框架</h3>
+              <ul>
+                <li><span>SemanticUI</span>
+                  <div class="ui yellow active progress degree3" >
+                    <div class="bar"><a href="/menu/blog"><i class="icon icon-new-tab"></i></a></div>
+                  </div>
+                </li>
+                <li><span>Materialize</span>
+                  <div class="ui yellow active progress degree2" >
+                    <div class="bar"><a href="/menu/blog"><i class="icon icon-new-tab"></i></a></div>
+                  </div>
+                </li>
+              </ul>
+             <h3>資料庫</h3>
+              <ul>
+                <li><span>maria(mysql)</span>
+                  <div class="ui red active progress degree1" >
+                    <div class="bar"><a href="/menu/blog"><i class="icon icon-new-tab"></i></a></div>
+                  </div>
+                </li>
+              </ul>
+          </div>
              <h3>javascript 相關</h3>
               <ul>
                 <li>
@@ -221,61 +212,11 @@
                     <div class="bar"><a href="/menu/blog"><i class="icon icon-new-tab"></i></a></div>
                   </div>
                 </li>
-                <li><span>AngularJS 2</span>
+                <li><span>ReactJS</span>
                   <div class="ui blue active progress degree1" >
                     <div class="bar"><a href="/menu/blog"><i class="icon icon-new-tab"></i></a></div>
                   </div>
                 </li>
-              </ul>
-            </div>
-            <div class="box">
-             <h3>CSS 框架</h3>
-              <ul>
-                <li><span>SemanticUI</span>
-                  <div class="ui yellow active progress degree3" >
-                    <div class="bar"><a href="/menu/blog"><i class="icon icon-new-tab"></i></a></div>
-                  </div>
-                </li>
-                <li><span>Materialize</span>
-                  <div class="ui yellow active progress degree2" >
-                    <div class="bar"><a href="/menu/blog"><i class="icon icon-new-tab"></i></a></div>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="page skill">
-        <div class="wrapper">
-          <!-- 技能 -->
-          <h2>後端技術</h2>
-          <div class="inner">
-             <h3>軟體工具</h3>
-              <ul>
-                <li><span>Sublime Text</span>
-                  <div class="ui green active progress degree4" >
-                    <div class="bar"><a href="/menu/blog"><i class="icon icon-new-tab"></i></a></div>
-                  </div>
-                </li>
-                <li><span>Git</span>
-                  <div class="ui green active progress degree2" >
-                    <div class="bar"><a href="/menu/blog"><i class="icon icon-new-tab"></i></a></div>
-                  </div>
-                </li>
-                <li><span>Bower</span>
-                  <div class="ui green active progress degree1" >
-                    <div class="bar"><a href="/menu/blog"><i class="icon icon-new-tab"></i></a></div>
-                  </div>
-                </li>
-                <li><span>Gulp</span>
-                  <div class="ui green active progress degree1" >
-                    <div class="bar"><a href="/menu/blog"><i class="icon icon-new-tab"></i></a></div>
-                  </div>
-                </li>
-              </ul>
-             <h3>javascript 相關</h3>
-              <ul>
                 <li><span>Node.JS</span>
                   <div class="ui blue active progress degree3" >
                     <div class="bar"><a href="/menu/blog"><i class="icon icon-new-tab"></i></a></div>
@@ -302,22 +243,13 @@
                   </div>
                 </li>
               </ul>
-             <h3>資料庫</h3>
-              <ul>
-                <li><span>maria(mysql)</span>
-                  <div class="ui red active progress degree1" >
-                    <div class="bar"><a href="/menu/blog"><i class="icon icon-new-tab"></i></a></div>
-                  </div>
-                </li>
-              </ul>
-          </div>
-
+        </div>
         </div>
       </section>
-      <section class="page work">
-        <div class="wrapper">
+      <section id="works">
+        <div class="inner wrapper">
           <!-- 作品 WORKS -->
-          <h2>WORKS</h2>
+          <h2>作品</h2>
           <div class="inner">
             <h3>網站及APP專案</h3>
             <div class="table">
@@ -411,10 +343,10 @@
           </div>
         </div>
       </section>
-      <section class="page contact">
-        <div class="wrapper">
-          <!-- 聯絡 -->
-          <h2>Contact</h2>
+   <!--     <section id="contact">
+        <div class="inner wrapper">
+          聯絡 Contact
+          <h2>聯絡</h2>
           
           <div class="follow">
             <a href="https://www.facebook.com/Tr.oxalis">
@@ -436,14 +368,12 @@
               <i class="icon icon-github"></i>
             </a>
           </div>
-          <footer class="footer">
-            <div class="Copyright">Copyright © 2015 By <a href="/">提亞</a> All rights reserved</div>
-          </footer>
         </div>
-      </section>
-    </div>
-  </div>
-
+      </section> -->
+      <footer class="footer">
+        <div class="Copyright">Copyright © 2015 By <a href="/">提亞</a> All rights reserved</div>
+      </footer>
+  <div class="cover"></div>
 <script src="/javascripts/web_index.js"></script>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
