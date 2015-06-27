@@ -17,7 +17,7 @@
   <pubDate>Wed, 20 May 2015 12:00:00 GMT</pubDate>
   <lastBuildDate>
   
-  Wed, 17 Jun 2015 09:53:28 GMT
+  Sat, 27 Jun 2015 13:28:58 GMT
   </lastBuildDate>
   <category>Web development</category>
   <category>BLOG</category>
@@ -26,6 +26,144 @@
   <ttl>60</ttl>
   <atom:link rel="self" href="http://tr-blank.github.io/rss.xml" type="application/rss+xml" />
   
+  <item>
+    <title>React筆記 - 利用Webpack建立LiveReload開發環境</title>
+    <link>http://tr-blank.github.io/menu/blog/00152</link>
+    <description><![CDATA[
+      <p>由於React是把html也塞到js裡，網站畫面複雜一點的話js檔看起來會很長一串，所以習慣開發時把程式碼分成一個一個小一點的js檔(模組)用require來關聯需要使用的檔案(模組)，但這樣的作法會讓網頁發送一堆請求感覺也不太好，所以決定使用看看打包套件。</p>
+<p>在決定使用Webpack來做把關聯的檔案(模組)打包的工作後，發現Webpack好像可以做到一些原本用gulp做的事情，於是好奇的嘗試了一番。</p>
+<p>此篇文章便是紀錄用Webpack來實作LiveReload功能的過程。</p>
+<hr>
+<h3 id="-">前置動作</h3>
+<p>確認node.js、npm、webpack、webpack-dev-server已全局安裝完成。</p>
+<p>在命令提示字元裡輸入</p>
+<pre><code>node -v 
+</code></pre><p>如有出現版本編號即是node已安裝。輸入：</p>
+<pre><code>npm list -g --depth=0
+</code></pre><p>將會出現已安裝的全局套件清單，如果裡頭有npm、webpack、webpack-dev-server即是該套件已安裝在全局。</p>
+<p>(安裝套件指令&quot;npm install -g 套件名稱&quot;)</p>
+<h3 id="-">建立步驟</h3>
+<ol>
+<li><h4 id="-cmd-cd-">創建專案資料夾，開啟<strong>命令提示字元(cmd)</strong>移動(cd)到專案資料夾目錄</h4>
+</li>
+<li><h4 id="-npm-init-package-json-">輸入npm init指令建立package.json(專案設定檔)</h4>
+<p>修改初始package.json內容：</p>
+<pre><code>{
+  &quot;name&quot;: &quot;專案名稱&quot;,
+  &quot;version&quot;: &quot;1.0.0&quot;,   //專案版本
+  &quot;description&quot;: &quot;&quot;,    //專案簡介
+  &quot;main&quot;: &quot;server.js&quot;,  //入口檔(app.js)
+  &quot;author&quot;: &quot;Tiya&quot;,     //製作者
+  &quot;dependencies&quot;: {},   //生產環境套件清單
+  &quot;devDependencies&quot;: {} //開發環境套件清單
+ }
+</code></pre></li>
+<li><h4 id="-">安裝套件到專案</h4>
+<ul>
+<li>react - 用於創建前端用戶介面的JavaScript library。</li>
+<li>webpack - 強大的打包套件，類似於Browserify。</li>
+<li>webpack-dev-server - 小型server(使用node.js+express)。 </li>
+<li>react-hot-loader - 實作LiveReload功能的主要套件。</li>
+<li>babel-loader - 用於編譯jsx與ES6語法。</li>
+</ul>
+<p>安裝指令如下：</p>
+<pre><code>npm install react webpack webpack-dev-server react-hot-loader babel-loader --save-dev
+</code></pre><p>註.--save-dev指令：安裝套件同時記錄到package.json中的devDependencies。</p>
+</li>
+<li><h4 id="-">新增檔案及資料夾到專案目錄。</h4>
+<p>目前專案目錄：</p>
+<pre><code>  - 專案資料夾
+    + node_modules資料夾 //裡頭是剛剛安裝的套件
+    package.json 
+</code></pre><p>新增修改後的專案目錄(可調整)：</p>
+<pre><code>  - 專案資料夾
+    + node_modules
+    - app             //放置react原檔資料夾
+      main.js         //打包入口檔
+      ...             //其他react檔案
+    - public          //放置前端資源的資料夾
+      + img
+      + js            //webpack打包完成的bundle.js檔案放置資料夾
+      + css
+    index.html        //專案網站首頁
+    package.json
+    server.js         //專案入口檔、伺服器設定檔(app.js)
+    webpack.config.js //webpack打包設定檔
+</code></pre></li>
+<li><h4 id="-">修改各個檔案程式碼</h4>
+<h4 id="server-js-">server.js - 專案入口檔、伺服器設定檔</h4>
+<pre><code>var webpack = require(&#39;webpack&#39;);
+var WebpackDevServer = require(&#39;webpack-dev-server&#39;);
+var config = require(&#39;./webpack.config&#39;); //依目錄結構不同而有所調整
+
+var compiler = webpack(config);
+
+var bundler = new WebpackDevServer(compiler, {
+    publicPath: config.output.publicPath, //抓取webpack.config.js內的設定
+    hot: true, //LiveReload重要設定
+    noInfo: false,
+    historyApiFallback: true
+});
+
+bundler.listen(8080, &#39;localhost&#39;, function() { 
+    console.log(&#39;Webpack-dev-server is live on port 8080&#39;);
+});
+</code></pre><h4 id="webpack-config-js-webpack-">webpack.config.js - webpack打包設定檔</h4>
+<pre><code>var path = require(&#39;path&#39;);
+var webpack = require(&#39;webpack&#39;);
+
+module.exports = {
+  entry: [
+    &#39;webpack-dev-server/client?http://localhost:8080&#39;,//使用webpack-dev-server
+    &#39;webpack/hot/only-dev-server&#39;,
+    path.resolve(__dirname, &#39;app/main.js&#39;) //打包入口檔位置
+  ],
+  output: {
+    path: path.resolve(__dirname, &#39;public/js/&#39;), //打包檔案的存放位置
+    publicPath: &#39;/public/js/&#39;, //網站訪問打包檔案的路徑
+    filename: &#39;bundle.js&#39; //打包檔案的名稱
+  },
+  module: {
+    loaders: [{
+      test: /\.js$/,
+      loaders: [&#39;react-hot&#39;, &#39;babel&#39;],//針對js檔使用热替换和編譯jsx與ES6語法的套件
+      include: path.join(__dirname, &#39;app&#39;)//只需追蹤app裡的js檔(需打包的檔案)，節省時間。
+    }]
+  },
+  plugins: [
+    new webpack.HotModuleReplacementPlugin(),//使用webpack-dev-server的Hot Module Replacement Plugin套件
+    new webpack.NoErrorsPlugin()//程式碼沒有錯誤時再更新頁面。
+  ]
+};
+</code></pre><h4 id="index-html-">index.html - 專案首頁</h4>
+<p>加入兩個script標籤載入&quot;//localhost:8080/webpack-dev-server.js&quot;和&quot;js/bundle.js&quot;。</p>
+</li>
+<li><h4 id="-react-public-js-">打包react檔案到public/js資料夾下</h4>
+<p>命令提示字元移動到webpack.config.js所在目錄，執行打包指令：      </p>
+<pre><code>webpack
+</code></pre><p>完成後public/js目錄下就會出現打包完成的bundle.js檔案。</p>
+</li>
+<li><h4 id="-server-js-localhost-8080-react-">執行server.js入口檔，在瀏覽器網址列輸入//localhost:8080/便可看見react建置的網頁介面。</h4>
+</li>
+<li><h4 id="-app-react-">之後每修改app資料夾底下的react原檔後存檔，網頁介面就會自動更新不用重新整理。</h4>
+</li>
+</ol>
+<p>記得LiveReload的網頁介面是方便開發的bundle虛擬檔所產生，實際的js/bundle.js依然是舊有的程式碼，所以在修改最後需要在打包一次(重複步驟6)來更新js/bundle.js。</p>
+<p>或者也可直接用<strong>webpack --watch</strong>指令。</p>
+
+    	]]>
+    </description>
+    <guid isPermaLink="true">http://tr-blank.github.io/menu/blog/00152</guid>
+  <pubDate>
+    Sat, 27 Jun 2015 13:22:47 GMT
+  </pubDate>
+	
+	    <category>React</category>
+	
+	    <category>Webpack</category>
+	
+  </item>
+
   <item>
     <title>發文通知到各社群平台 - 研究紀錄</title>
     <link>http://tr-blank.github.io/menu/blog/00150</link>

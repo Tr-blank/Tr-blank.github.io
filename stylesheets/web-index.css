@@ -114,15 +114,23 @@ header .now {
   display: table;
   width: 100%;
 }
-.e-list div {
-  display: table-cell;
-}
 .e-list .l-left,
 .e-list .l-right {
+  display: table-cell;
   width: 45%;
+}
+.e-list .l-left div,
+.e-list .l-right div {
+  padding-bottom: 1px;
+}
+.e-list .l-left span,
+.e-list .l-right span {
+  font-weight: bold;
+  color: #00acc1;
 }
 .e-list .year {
   text-align: center;
+  font-size: 1.2em;
 }
 .e-list .l-left {
   text-align: right;
@@ -184,6 +192,7 @@ section {
 }
 .inner h2 {
   text-align: center;
+  font-size: 2.2em;
 }
 #tiya {
   background: url("http://tr-blank.github.io/images/1930571.jpg");
@@ -225,7 +234,8 @@ section {
 }
 #tiya h2 {
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
+  font-size: 1.5em;
 }
 #tiya .list {
   display: table;
