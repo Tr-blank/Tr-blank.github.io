@@ -17,7 +17,7 @@
   <pubDate>Wed, 20 May 2015 12:00:00 GMT</pubDate>
   <lastBuildDate>
   
-  Sat, 18 Jul 2015 11:22:51 GMT
+  Sat, 25 Jul 2015 15:00:25 GMT
   </lastBuildDate>
   <category>Web development</category>
   <category>BLOG</category>
@@ -26,6 +26,54 @@
   <ttl>60</ttl>
   <atom:link rel="self" href="http://tr-blank.github.io/rss.xml" type="application/rss+xml" />
   
+  <item>
+    <title>Open Graph - social meta tags</title>
+    <link>http://tr-blank.github.io/menu/blog/00157</link>
+    <description><![CDATA[
+      <p>在文章頁面加上社群分享按鈕後，發現在社群網站上看分享的貼文內容有些怪異，於是去查了查社群抓取分享貼文內容的規則是什麼。</p>
+<p>於是找到了Open Graph，原來社群有專門的<meta>標籤來自訂分享內容的標題、圖片和說明文字。</p>
+<hr>
+<p>參考網站:</p>
+<p><a href="http://blog.shihshih.com/social-meta-tag/">如何使用 Open Graph, Twitter Card 自訂網頁在 Facebook, Google, Twitter… 的顯示內容</a></p>
+<p>整理完畢的程式碼:</p>
+<pre><code>&lt;meta charset=&quot;utf-8&quot;&gt;
+&lt;title&gt;網頁標題. Maximum length 60-70 characters&lt;/title&gt;
+&lt;meta name=&quot;description&quot; content=&quot;網頁簡介. No longer than 155 characters.&quot; /&gt;
+&lt;meta name=&quot;keywords&quot; content=&quot;關鍵字,META,SEO&quot;&gt;
+&lt;meta name=&quot;author&quot; content=&quot;作者&quot; &gt;
+&lt;meta name=&quot;copyright&quot; content=&quot;xxx版權所有&quot; &gt;
+
+&lt;!-- Google Authorship and Publisher Markup --&gt;
+&lt;link rel=&quot;author&quot; href=&quot; https://plus.google.com/[Google+_Profile]/posts&quot;/&gt;
+&lt;link rel=&quot;publisher&quot; href=&quot;https://plus.google.com/[Google+_Page_Profile]&quot;/&gt;
+
+&lt;!-- Twitter Card data --&gt;
+&lt;meta name=&quot;twitter:card&quot; content=&quot;summary&quot;&gt;
+&lt;meta name=&quot;twitter:site&quot; content=&quot;@publisher_handle ,Twitter 的帳號&quot;&gt;
+&lt;meta name=&quot;twitter:creator&quot; content=&quot;@author_handle 作者&quot;&gt;
+
+&lt;!--Open Graph data --&gt;
+&lt;meta property=&quot;og:title&quot; content=&quot;網頁標題&quot; /&gt;
+&lt;meta property=&quot;og:type&quot; content=&quot;website&quot; /&gt;
+&lt;meta property=&quot;og:url&quot; content=&quot;網址&quot; /&gt;
+&lt;meta property=&quot;og:image&quot; content=&quot; http://example.com/image.jpg&quot; /&gt;
+&lt;meta property=&quot;og:description&quot; content=&quot;網頁簡介&quot; /&gt;
+&lt;meta property=&quot;og:site_name&quot; content=&quot;Site Name, i.e. Moz&quot; /&gt;
+&lt;meta property=&quot;article:tag&quot; content=&quot;Article Tag&quot; /&gt;
+</code></pre>
+    	]]>
+    </description>
+    <guid isPermaLink="true">http://tr-blank.github.io/menu/blog/00157</guid>
+  <pubDate>
+    Sat, 25 Jul 2015 14:57:56 GMT
+  </pubDate>
+	
+	    <category>筆記</category>
+	
+	    <category>HTML</category>
+	
+  </item>
+
   <item>
     <title>React筆記 - 利用Webpack建立LiveReload開發環境</title>
     <link>http://tr-blank.github.io/menu/blog/00152</link>
